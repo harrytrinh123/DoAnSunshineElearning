@@ -1,0 +1,39 @@
+.background {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url("../../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.user-img {
+    box-shadow: 0px 0px 12px 4px #ccc;
+    margin: 10px;
+    width: 100%;
+}
+
+.box {
+    width: 90%;
+    height: auto;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+h2 {
+    margin-bottom: 40px;
+}
+
+.forgot {
+    margin-top: 20px;
+}
+
+.form-control, .btn {
+    border-radius: 20px;
+}
+
+.back_to_login {
+    display: block;
+    margin-top: 10px;
+}
