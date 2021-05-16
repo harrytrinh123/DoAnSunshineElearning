@@ -24,33 +24,33 @@
                 <div id="topic_name" class="text-uppercase font-weight-bold">Topic Name</div><br />
                 <div class="list-group">
                     <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
                 </div>
             </div>
             <div class="col-4 col-s-4 menu">
                 <div id="lasted_posts" class="text-uppercase font-weight-bold">Lasted Topic</div><br />
                 <div class="list-group">
                     <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
                 </div>
             </div>
             <div class="col-8 col-s-8 menu">
-                <div id="topic_name">Topic Name</div><br />
+                <div id="topic_name" class="text-uppercase font-weight-bold">Topic Name</div><br />
                 <div class="list-group">
                     <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
-					<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
+					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
                 </div>
             </div>
 
