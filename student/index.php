@@ -9,7 +9,9 @@
 </head>
 <body>
   <?php include("./partials/header.php")?>
-  <div class="content"></div>
+  <div class="container">
+  Architecto diamlorem exercitationem itaque anim iusto lacus phasellus! Blanditiis suscipit facilisi commodi, blanditiis, aute. Perspiciatis! Culpa! Sociosqu nisl, occaecati, dolor.
+  </div>
   <?php include("./partials/footer.php")?>
 </body>
 </html>
