@@ -12,9 +12,55 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+  <div class="row bar_header">
+    <div class="col-md-10"></div>
+    <div class="col-md-2">
+      <a class href="#" id="cuaHang"><i class="fas fa-store"></i></a>
+      <a class="btn-login" href="login.php">Đăng ký</a> |
+      <a class="btn-login" href="register.php">Đăng nhập</a>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light my_nav">
+    <a class="navbar-brand" href=".">
+      <img id="logo" src="./images/logo.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
   <div class="background d-flex justify-content-center align-items-center">
     <div class="row box align-items-center bg-light position-relative">
       <div class="col-md-6">
@@ -45,13 +91,14 @@
           <div class="form-group">
             <input type="checkbox" id="accept"> Tôi chấp nhận với <a href="#">điều khoản sử dụng.</a>
           </div>
-         <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
-         <a class="back_to_login" href="./login.php" >Trở về <i class="fas fa-long-arrow-alt-left"></i></a>
+          <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
+          <a class="back_to_login" href="./login.php">Trở về <i class="fas fa-long-arrow-alt-left"></i></a>
         </form>
         </p>
       </div>
     </div>
   </div>
+  <?php include("./partials/footer.php")?>
 </body>
 
 </html>

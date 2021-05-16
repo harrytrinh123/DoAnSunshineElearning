@@ -2,12 +2,12 @@
   <div class="col-md-10"></div>
   <div class="col-md-2">
     <a class href="#" id="cuaHang"><i class="fas fa-store"></i></a>
-    <a class="btn-login" href="#">Đăng ký</a> |
-    <a class="btn-login" href="#">Đăng nhập</a>
+    <a class="btn-login" href="login.php">Đăng ký</a> |
+    <a class="btn-login" href="register.php">Đăng nhập</a>
   </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light my_nav">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href=".">
     <img id="logo" src="./images/logo.png" alt="">
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
