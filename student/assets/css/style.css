@@ -45,6 +45,10 @@ h1 {
     color: rgb(201, 198, 198);
 }
 
+.btn-login {
+    font-size: 12px;
+}
+
 .btn-login:hover {
     color: rgb(148, 245, 213);
     text-decoration: none;
