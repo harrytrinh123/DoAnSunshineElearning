@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,14 +16,34 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
+<?php
+session_start();
 
+if(isset($_POST['login'])) {
+  include("./partials/connect.php");
+  $email = $_POST['uName'];
+  $password = $_POST['pWord'];
+  $sql = "SELECT * FROM account WHERE Username = '$email' AND Password = '$password'";
+  $results = $connect->query($sql);
+
+  $final = $results->fetch_assoc();
+  $_SESSION['email'] = $final['Username'];
+  $_SESSION['password'] = $final['Password'];
+  if($email=$final['Username'] AND  $password=$final['Password']) {
+    header('location: index.php');
+  }
+  else {
+    echo '<div class="bg-danger">Sai ten dang nhap hoac mat khau!</div>';
+  }
+}
+?>
 <body>
   <div class="row bar_header">
     <div class="col-md-10"></div>
     <div class="col-md-2">
       <a class href="#" id="cuaHang"><i class="fas fa-store"></i></a>
-      <a class="btn-login" href="login.php">Đăng ký</a> |
-      <a class="btn-login" href="register.php">Đăng nhập</a>
+      <a class="btn-login" href="register.php">Đăng ký</a> |
+      <a class="btn-login" href="login.php">Đăng nhập</a>
     </div>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light my_nav">
@@ -72,19 +93,19 @@
       <!-- form login -->
       <div class="col-md-6 textce p-md-5">
         <h2 class="text-center text-primary font-weight-bold">Đăng nhập</h2>
-        <form action="">
+        <form action="login.php" method="POST">
           <div class="form-group">
             <label for="unam">Tài khoản:</label>
-            <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="uname" required>
+            <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="uName" required>
           </div>
           <div class="form-group">
             <label for="pwd">Mật khẩu:</label>
-            <input type="text" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
+            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pWord" required>
           </div>
           <div class="form-group">
             <input type="checkbox" id="remeber"> Nhớ tài khoản
           </div>
-          <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+          <button type="submit" class="btn btn-primary w-100" name="login">Đăng nhập</button>
         </form>
         <p class="forgot text-right">
           <a href="#">Quên mật khẩu?</a>
