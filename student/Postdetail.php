@@ -14,11 +14,8 @@
 	  <link rel="stylesheet" href="assets/css/forum.css" />
 </head>
 <body>
+  <?php include("./partials/header.php") ?>
     <div class="container">
-        <div class="header">
-            <h1>Logo</h1>
-        </div>
-       
         <div class="row">
             <div class="col-8 col-s-8 menu">
                 <div id="topic_name_detail" class="text-uppercase font-weight-bold">Topic Name</div><br />

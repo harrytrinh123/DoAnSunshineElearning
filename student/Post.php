@@ -13,10 +13,8 @@
   <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="assets/css/forum.css" />
 <body>
+  <?php include("./partials/header.php") ?>
     <div class="container">
-        <div class="header">
-            <h1>Logo</h1>
-        </div>
         <div class="row">
             <div class="col-3 col-s-3 menu">
                 <div class="list-group">
@@ -29,11 +27,11 @@
             <div class="col-9 col-s-9 menu" >
                 <form>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Tiêu Đề</label>
+                        <label style="font-weight:bold" for="exampleFormControlInput1">Tiêu Đề</label>
                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Vui lòng nhập tiêu đề ...">
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlSelect1">Chọn Chủ Đề</label>
+                        <label style="font-weight:bold" for="exampleFormControlSelect1">Chọn Chủ Đề</label>
                         <select class="form-control" id="exampleFormControlSelect1">
                             <option>Nghe</option>
                             <option>Nói</option>
@@ -43,12 +41,12 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Nội Dung</label>
+                        <label style="font-weight:bold" for="exampleFormControlTextarea1">Nội Dung</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Đăng Bài</button>
-                        <button type="submit" class="btn btn-danger">Huỷ</button>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Đăng Bài</button>
+						<button type="button" class="btn btn-danger btn-lg btn-block">Huỷ</button>
                     </div>
                 </form>
             </div>
