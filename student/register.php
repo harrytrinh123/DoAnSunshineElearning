@@ -96,7 +96,7 @@
             <input type="checkbox" id="accept"> Tôi chấp nhận với <a href="#">điều khoản sử dụng.</a>
           </div>
           <button type="submit" class="btn btn-primary w-100">Đăng ký</button>
-          <a class="back_to_login" href="./login.php">Trở về <i class="fas fa-long-arrow-alt-left"></i></a>
+          <a class="back_to_login" href="./login.php">Đã có tài khoản</a>
         </form>
         </p>
       </div>

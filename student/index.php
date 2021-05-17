@@ -16,7 +16,7 @@
     <!-- MAIN -->
     <div class="container">
       <!-- Muc tieu khoa hoc -->
-      <h1 class="m-t-5 m-t-b-2 text-center">Tiếng Anh cho trẻ từ 4-11 tuổi</h1>
+      <h1 class="m-t-5 text-center">Tiếng Anh cho trẻ từ 4-11 tuổi</h1>
       <h4 class="text-center">Con chinh phục 6 mục tiêu vàng</h4>
       <div class="row">
         <div class="col-md-4">
@@ -53,7 +53,7 @@
           <div class="card card_muctieu">
             <img src="./images/muctieu4.png" class="card-img-top" alt="...">
             <div class="card-body">
-              <strong class="card_text_muctieu">Tran bị bộ kỹ năng</strong>
+              <strong class="card_text_muctieu">Trang bị bộ kỹ năng</strong>
               <p class="card_text_muctieu">Sáng tạo, Hợp tác, Giao tiếp & Tư duy phản biện</p>
             </div>
           </div>
