@@ -20,8 +20,8 @@
     <div class="col-md-10"></div>
     <div class="col-md-2">
       <a class href="#" id="cuaHang"><i class="fas fa-store"></i></a>
-      <a class="btn-login" href="login.php">Đăng ký</a> |
-      <a class="btn-login" href="register.php">Đăng nhập</a>
+      <a class="btn-login" href="register.php">Đăng ký</a> |
+      <a class="btn-login" href="login.php">Đăng nhập</a>
     </div>
   </div>
   <nav class="navbar navbar-expand-lg navbar-light bg-light my_nav">
@@ -71,7 +71,7 @@
       <!-- form register -->
       <div class="col-md-6 textce">
         <h2 class="text-center text-primary font-weight-bold">Đăng ký</h2>
-        <form action="">
+        <form action="POST">
           <div class="form-group">
             <label for="unam">Tài khoản:</label>
             <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="uname" required>
@@ -79,6 +79,10 @@
           <div class="form-group">
             <label for="pwd">Mật khẩu:</label>
             <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">Nhập lại mật khẩu:</label>
+            <input type="password" class="form-control" id="pwdNhapLai" placeholder="Nhập lại mật khẩu" name="pwdNhapLai" required>
           </div>
           <div class="form-group">
             <label for="hoTen">Họ tên:</label>
