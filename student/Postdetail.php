@@ -25,24 +25,24 @@
                     <a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
                     <a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Porta ac consectetur ac</a>
                     <a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Vestibulum at eros</a>
-					<a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Vestibulum at eros</a>
-					<a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Vestibulum at eros</a>
-					<a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Vestibulum at eros</a>
-					<a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Vestibulum at eros</a>
+		    <a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Vestibulum at eros</a>
+		    <a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Vestibulum at eros</a>
+		    <a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Vestibulum at eros</a>
+		    <a href="#" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Vestibulum at eros</a>
                 </div>
             </div>
             <div class="col-4 col-s-4 menu">
                 <div id="relative_posts" class="text-uppercase font-weight-bold">Relative Posts</div><br />
                <div class="list-group">
-                <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-                <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-                <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-                <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
-                <a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
-				<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
-				<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Morbi leo risus</a>
-				<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
-				<a href="Postdetal.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Morbi leo risus</a>
+                <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
+                <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+                <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
+                <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Dapibus ac facilisis in</a>
+                <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
+		<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
+		<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Morbi leo risus</a>
+		<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar.png" width="40" height="40" /> Morbi leo risus</a>
+		<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> Morbi leo risus</a>
                </div>
             </div>
 
