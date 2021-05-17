@@ -1,15 +1,15 @@
-<div class="row bar_header">
-  <div class="col-md-10"></div>
-  <div class="col-md-2">
-    <a class href="#" id="cuaHang"><i class="fas fa-store"></i></a>
-    <a class="btn-login" href="login.php">Đăng ký</a> |
-    <a class="btn-login" href="register.php">Đăng nhập</a>
+<div class="container-fluid">
+  <div class="row bar_header">
+    <div class="col-md-10"></div>
+    <div class="col-md-2">
+      <a class href="#" id="cuaHang"><i class="fas fa-store"></i></a>
+      <a class="btn-login" href="register.php">Đăng ký</a> |
+      <a class="btn-login" href="login.php">Đăng nhập</a>
+    </div>
   </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-light bg-light my_nav">
-  <a class="navbar-brand" href=".">
-    <img id="logo" src="./images/logo.png" alt="">
-  </a>
+  <a class="navbar-brand" href="#"><img id="logo" src="./images/logo.png" alt=""></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -43,7 +43,7 @@
     </form>
   </div>
 </nav>
-<div  id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item  carousel_img_custom">
       <img src="./images/banner1.jpg" class="d-block w-100" alt="...">

@@ -1,0 +1,22 @@
+.card_thongtin_khoahoc {
+    height: 500px;
+}
+
+.card_thongtin_khoahoc img {
+    height: 250px;
+}
+
+.card_muctieu {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+.card_muctieu img {
+    width: 50%;
+    margin: auto;
+}
+
+.card_text_muctieu {
+    text-align: center;
+    display: block;
+}

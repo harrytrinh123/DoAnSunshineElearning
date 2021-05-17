@@ -81,8 +81,12 @@
             <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
           </div>
           <div class="form-group">
-            <label for="phone">Điện thoại:</label>
-            <input type="text" class="form-control" id="phone" placeholder="Nhập điện thoại" name="phone">
+            <label for="hoTen">Họ tên:</label>
+            <input type="text" class="form-control" id="hoTen" placeholder="Nhập họ tên" name="hoTen">
+          </div>
+          <div class="form-group">
+            <label for="ngaySinh">Ngày sinh:</label>
+            <input type="date" class="form-control" id="ngaySinh" name="ngaySinh">
           </div>
           <div class="form-group">
             <label for="email">Email:</label>
