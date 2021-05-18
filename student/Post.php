@@ -60,11 +60,6 @@
 				  <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
 				</li>
 			  </ul>
-=======
-
-        
-    </div>
-    <?php include("./partials/footer.php")?>
 >>>>>>> main
 </body>
 </html>

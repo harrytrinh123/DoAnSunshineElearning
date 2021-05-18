@@ -56,9 +56,6 @@
 				</li>
 			  </ul>
 =======
-
-        </div>
-        <?php include("./partials/footer.php")?>
 >>>>>>> main
 </body>
 </html>

@@ -47,7 +47,6 @@
 					<a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar3.png" width="40" height="40" /> Morbi leo risus</a>
                 </div>
             </div>
-<<<<<<< HEAD
 			</div>
 			</div>
 			<!-- FOOTER -->
@@ -61,12 +60,6 @@
 				  <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
 				</li>
 			  </ul>
-=======
 
-        </div>
-
-    </div>
-    <?php include("./partials/footer.php")?>
->>>>>>> main
 </body>
 </html>
