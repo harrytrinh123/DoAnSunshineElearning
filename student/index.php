@@ -120,7 +120,7 @@
             <!-- form register -->
             <div class="col-md-12 textce">
               <h2 class="text-center font-weight-bold">Đăng ký tài khoản để tham gia học và nhận học bổng lên đến 3.500.000 Đ</h2>
-              <form action="">
+              <form action="POST">
                 <div class="form-group">
                   <label for="unam">Tài khoản:</label>
                   <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="uname" required>
@@ -128,6 +128,10 @@
                 <div class="form-group">
                   <label for="pwd">Mật khẩu:</label>
                   <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pwd" required>
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Nhập lại mật khẩu:</label>
+                  <input type="password" class="form-control" id="pwdNhapLai" placeholder="Nhập lại mật khẩu" name="pwdNhapLai" required>
                 </div>
                 <div class="form-group">
                   <label for="hoTen">Họ tên:</label>

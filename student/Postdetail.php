@@ -43,6 +43,7 @@
             </div>
 			</div>
             </div>
+<<<<<<< HEAD
 			  <!-- FOOTER -->
 			  <?php include("./partials/footer.php") ?>
 			  <!-- Contact bar -->
@@ -54,5 +55,10 @@
 				  <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
 				</li>
 			  </ul>
+=======
+
+        </div>
+        <?php include("./partials/footer.php")?>
+>>>>>>> main
 </body>
 </html>
