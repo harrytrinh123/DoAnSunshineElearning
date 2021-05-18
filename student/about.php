@@ -39,7 +39,7 @@
         <div class="badge bg-primary text-wrap" style="width:1110px;height:50px;font-size:30px">THE POWER WITHIN YOU</div>
         <p style="text-align:justify;margin-top:32px">SUNSHINE is committed to maximizing and spreading the full potential of its students by constantly evoking and promoting their internal strengths and at the same time creating the best platform for young people perform to the best of their abilities. “The Power Within You” is meant to create and develop the potentials available within each person to achieve success with dedication, commitment and great effort</p>
         <div class="badge bg-primary text-wrap" style="width:1110px;height:50px;font-size:30px;margin-top:20px">WHY SUNSHINE</div>
-        <p style="text-align:justify;margin-top:20px">With the mission of “Changing lives through education”, YOLA promises to optimize and unlock the full potential of its students through a solid foundation of education.</p><br>
+        <p style="text-align:justify;margin-top:20px">With the mission of “Changing lives through education”, SUNSHINE promises to optimize and unlock the full potential of its students through a solid foundation of education.</p><br>
        <div class="row">
         <div class="col-3 col-s-3">
         <div class="card" style="width: auto;height:450px;">
