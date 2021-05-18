@@ -42,7 +42,7 @@
         <p style="text-align:justify;margin-top:20px">With the mission of “Changing lives through education”, YOLA promises to optimize and unlock the full potential of its students through a solid foundation of education.</p><br>
        <div class="row">
         <div class="col-3 col-s-3">
-        <div class="card" style="width: auto;height:400px;">
+        <div class="card" style="width: auto;height:450px;">
           <img class="card-img-top" src="images/about1.jpg" alt="Card image cap" width="auto" height="150px">
           <div class="card-body">
             <p class="card-text" style="text-align:center;">A long-term road map for children from 4,5 years old - 14 years old and above. From language, to knowledge, critical thinking, to summer camps experiences to develop linguistically, social skills and self-confidence.</p>
@@ -50,7 +50,7 @@
         </div>
         </div>
         <div class="col-3 col-s-3">
-        <div class="card" style="width: auto;height:400px;">
+        <div class="card" style="width: auto;height:450px;">
           <img class="card-img-top" src="images/about2.jpg" alt="Card image cap" width="auto" height="150px">
           <div class="card-body">
             <p class="card-text" style="text-align:center;">Guarantee of ultimate results for students through a variety of programs, intensive research on language development, problem-solving skills in both situations, thinking and tactics.</p>
@@ -58,7 +58,7 @@
         </div>
         </div>
         <div class="col-3 col-s-3">
-        <div class="card" style="width: auto;height:400px;">
+        <div class="card" style="width: auto;height:450px;">
           <img class="card-img-top" src="images/about3.jpg" alt="Card image cap" width="auto" height="150px">
           <div class="card-body">
             <p class="card-text" style="text-align:center;">The intensive academic program focuses on language development and critical thinking, based on international standards and designed to meet the needs of Vietnamese students.</p>
@@ -66,7 +66,7 @@
         </div>
         </div>
         <div class="col-3 col-s-3">
-        <div class="card" style="width: auto;height:400px;">
+        <div class="card" style="width: auto;height:450px;">
           <img class="card-img-top" src="images/about4.jpg" alt="Card image cap" width="auto" height="150px">
           <div class="card-body">
             <p class="card-text" style="text-align:center;">Pioneering in using technology to encourage self-study, full circle learning online-offline, and community building across Yola network of alumni who are successful globally.</p>
