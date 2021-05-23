@@ -1,10 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.container>p {
+    font-size: 32px
+}
+
 .question {
-    background-color: rgb(228, 228, 230);
-    color: rgb(13, 13, 14);
-    border-radius: 5px;
-    padding-bottom: 10px;
+    width: 80%;
+    background-color: rgb(104, 204, 192);
+    margin: 0 auto;
+    border-radius: 10px;
     margin-bottom: 5px;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .options {
@@ -29,7 +38,7 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: rgb(168, 168, 168);
+    background-color: #555;
     border: 1px solid #ddd;
     border-radius: 50%
 }

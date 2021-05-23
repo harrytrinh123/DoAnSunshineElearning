@@ -16,7 +16,7 @@
     <!-- MAIN -->
     <div class="container">
       <!-- Muc tieu khoa hoc -->
-      <h1 class="m-t-5 text-center">Tiếng Anh cho trẻ từ 4-11 tuổi</h1>
+      <h1 class="m-t-5 text-center">Tiếng Anh cho trẻ từ 6-14 tuổi</h1>
       <h4 class="text-center">Con chinh phục 6 mục tiêu vàng</h4>
       <div class="row">
         <div class="col-md-4">
