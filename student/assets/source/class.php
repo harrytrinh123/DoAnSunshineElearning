@@ -1,46 +1,13 @@
 <?php
-include("common.php");
-$p= new csdl();
-$updatetrangthai = '';
-
-if($_POST['insert'] != '')
-{
-	$p->themxoasua($_POST['insert']);
-	phpAlert("Them vao gio hang thanh cong !");
-}
-
-if($_POST['delete'] != '')
-{
-	$p->themxoasua($_POST['delete']);
-}
-if($_POST['update'] != '')
-{
-	$p->themxoasua("UPDATE giohang SET soluong = '".$_POST['soluong']."' WHERE id = '".$_POST['update']."'");
-	phpAlert("Cập nhật thành công!");
-}
-
-if($_POST['updateTrangThai'] != '')
-{
-	$p->themxoasua("UPDATE donhang SET trangthai = '".$_POST['trangthai']."' WHERE id = '".$_POST['updateTrangThai']."'");
-	phpAlert("Chuyển trạng thái thành công!");
-}
-
 class csdl
 {
 	function connect()
 	{
-		$con = mysql_connect("localhost","nvt2k","123123");
-		if(!$con)
-		{
-			echo 'Khong ket noi duoc csdl !';
-			exit();	
-		}
-		else
-		{
-			mysql_select_db("sushine_elearning");
-			mysql_query("SET NAMES UTF8");
-			return $con;
-		}
+		$host = "localhost";
+		$user = "root";
+		$password = "";
+		$dbname = "sunshine_elearning";
+		$connect = mysqli_connect($host, $user, $password, $dbname);
 	}
 	function xuatsp($sql)
 	{
@@ -476,10 +443,30 @@ class csdl
 			echo 'Dang cap nhat san pham!';
 		}
 	}
-	
-	function update($sql)
+
+	function loadpost()
 	{
-		phpAlert($sql);
+		$link = $this->connect();
+		$ketqua= mysql_query("select*from post",$link);
+		$i = mysql_num_rows($ketqua);
+		if($i>0){
+			while($row=mysql_fetch_array($ketqua)){
+				$id=$row['ID'];
+				$title=$row['Title'];
+				$time=$row['Time'];
+				$hinh=$row['ImageUrl'];
+				$studentid=$row['StudentID'];
+				echo '
+				    <div class="list-group">
+                    <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40"/>
+					<p>'.$id.'</p>
+					<p>'.$title.'</p>
+					</a>
+                </div>';
+			}
+		}else{
+			echo 'Dang cap nhat san pham!';
+		}
 	}
 }
 ?>		 
