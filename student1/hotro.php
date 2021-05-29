@@ -108,18 +108,10 @@
                         </div>
 
                         <div class="nav-item dropdown">
-                            <a href="#"
-                               class="nav-link d-flex align-items-center dropdown-toggle"
-                               data-toggle="dropdown"
-                               data-caret="false">
-
-                                <span class="avatar avatar-sm mr-8pt2">
-
-                                    <span class="avatar-title rounded-circle bg-primary"><i class="material-icons">♛</i></span>
-
-                                </span>
-
-                            </a>
+                        <li class="nav-item">
+                            <a href="signup.html"
+                               class="btn btn-outline-dark">LOAN NGUYỄN</a>
+                        </li>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-header"><strong>Account</strong></div>
                                 <a class="dropdown-item"
@@ -423,13 +415,13 @@
                        </li>
                        <li class="sidebar-menu-item">
                            <a class="sidebar-menu-button"
-                              href="courses.html">
+                              href="../student1/edit-account-profile.html">
                                <span class="sidebar-menu-text">Cập nhật thông tin</span>
                            </a>
                        </li>
                        <li class="sidebar-menu-item">
                            <a class="sidebar-menu-button"
-                              href="paths.html">
+                              href="../student1/signup-payment.html">
                                <span class="sidebar-menu-text">Đăng ký khóa học</span>
                            </a>
                        </li>
@@ -447,7 +439,7 @@
                        </li>
                        <li class="sidebar-menu-item">
                            <a class="sidebar-menu-button"
-                              href="student-paths.html">
+                              href="../student1/student-dashboard.html">
                                <span class="sidebar-menu-text">Kết quả học tập</span>
                            </a>
                        </li>
@@ -455,12 +447,6 @@
                            <a class="sidebar-menu-button"
                               href="student-path.html">
                                <span class="sidebar-menu-text">Bài tập</span>
-                           </a>
-                       </li>
-                       <li class="sidebar-menu-item">
-                           <a class="sidebar-menu-button"
-                              href="../student1/student-paths.html">
-                               <span class="sidebar-menu-text">Lộ trình học tập</span>
                            </a>
                        </li>
                        <li class="sidebar-menu-item">

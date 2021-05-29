@@ -38,6 +38,8 @@
 
     <body class="layout-app ">
 
+ 
+ <script type="text/javascript" src="script.js"></script>
         <div class="preloader">
             <div class="sk-chase">
                 <div class="sk-chase-dot"></div>
@@ -104,7 +106,7 @@
                             <a href="courses.html"
                                class="btn btn-lg btn-white btn--raised mb-16pt">Browse Courses</a>
 
-                            <p class="mb-0"><a href="#"
+                            <p class= "mb-0"><a href="#"
                                    class="text-white text-shadow"><strong>Bạn muốn giáo viên nào?</strong></a></p>
 
                         </div>
@@ -869,7 +871,6 @@
 
                         <a href="../student1/index.php"
                            class="sidebar-brand ">
-                            <!-- <img class="sidebar-brand-icon" src="../../public/images/illustration/student/128/white.svg" alt="Luma"> -->
 
                             <span class="avatar avatar-xl sidebar-brand-icon h-auto">
 
@@ -891,13 +892,13 @@
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
-                                   href="courses.html">
+                                   href="../student1/edit-account-profile.html">
                                     <span class="sidebar-menu-text">Cập nhật thông tin</span>
                                 </a>
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
-                                   href="paths.html">
+                                   href="../student1/signup-payment.html">
                                     <span class="sidebar-menu-text">Đăng ký khóa học</span>
                                 </a>
                             </li>
@@ -915,7 +916,7 @@
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
-                                   href="student-paths.html">
+                                   href="../student1/student-dashboard.html">
                                     <span class="sidebar-menu-text">Kết quả học tập</span>
                                 </a>
                             </li>
@@ -925,11 +926,6 @@
                                     <span class="sidebar-menu-text">Bài tập</span>
                                 </a>
                             </li>
-                            <li class="sidebar-menu-item">
-                                <a class="sidebar-menu-button"
-                                   href="../student1/student-paths.html">
-                                    <span class="sidebar-menu-text">Lộ trình học tập</span>
-                                </a>
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
