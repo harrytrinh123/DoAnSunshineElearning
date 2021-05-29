@@ -1,7 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+}
+
+
+h4 {
+    font-family: "Sofia", sans-serif;
 }
 
 .container>p {
@@ -10,7 +15,7 @@
 
 .question {
     width: 80%;
-    background-color: rgb(104, 204, 192);
+    background-image: linear-gradient(rgb(120, 212, 189), rgb(123, 164, 226), rgb(203, 154, 243));
     margin: 0 auto;
     border-radius: 10px;
     margin-bottom: 5px;
@@ -38,7 +43,7 @@
     left: 0;
     height: 25px;
     width: 25px;
-    background-color: #555;
+    background-color: rgb(110, 108, 108);
     border: 1px solid #ddd;
     border-radius: 50%
 }
@@ -68,4 +73,29 @@
 
 .options input[type="radio"]:checked~.checkmark:after {
     transform: translate(-50%, -50%) scale(1)
+}
+
+.imgCauHoi {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.item {
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(179, 33, 179);
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    justify-content: center;
+    color: rgb(29, 96, 184);
+    text-align: center;
+}
+
+.item span {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: -25px;
 }
