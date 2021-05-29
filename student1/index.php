@@ -13,25 +13,25 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/vendor/spinkit.css"
+              href="../student1/public/vendor/spinkit.css"
               rel="stylesheet">
          <link type="text/css"
               href="../student1/public/css/style.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/vendor/perfect-scrollbar.css"
+              href="../student1/public/vendor/perfect-scrollbar.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/material-icons.css"
+              href="../student1/public/css/material-icons.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/fontawesome.css"
+              href="../student1/public/css/fontawesome.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/preloader.css"
+              href="../student1/public/css/preloader.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/app.css"
+              href="../student1/public/css/app.css"
               rel="stylesheet">
 
     </head>
@@ -86,7 +86,7 @@
                                data-placement="bottom"></a>
                         </li>
                         <li class="nav-item">
-                            <a href="signup.html"
+                            <a href="#"
                                class="btn btn-outline-dark">LOAN NGUYỄN</a>
                         </li>
                     </ul>
@@ -96,7 +96,7 @@
                      data-effects="parallax-background blend-background">
                     <div class="mdk-box__bg">
                         <div class="mdk-box__bg-front"
-                             style="background-image: url(../../public/images/photodune-4161018-group-of-students-m.jpg);"></div>
+                             style="background-image: url(../student1/public/images/photodune-4161018-group-of-students-m.jpg);"></div>
                     </div>
                     <div class="mdk-box__content justify-content-center">
                         <div class="hero container page__container text-center py-112pt">
@@ -137,7 +137,7 @@
                                                      data-toggle="tooltip"
                                                      data-placement="top"
                                                      title="">
-                                                    <a href="#"><img src="../../public/images/256_luke-porter-261779-unsplash.jpg"
+                                                    <a href="#"><img src="../student1/public/images/256_luke-porter-261779-unsplash.jpg"
                                                              alt="Avatar"
                                                              class="avatar-img rounded-circle"></a>
                                                 </div>
@@ -172,7 +172,7 @@
                                                      data-toggle="tooltip"
                                                      data-placement="top"
                                                      title="">
-                                                    <a href="#"><img src="../../public/images/256_michael-dam-258165-unsplash.jpg"
+                                                    <a href="#"><img src="../student1/public/images/256_michael-dam-258165-unsplash.jpg"
                                                              alt="Avatar"
                                                              class="avatar-img rounded-circle"></a>
                                                 </div>
@@ -207,7 +207,7 @@
                                                      data-toggle="tooltip"
                                                      data-placement="top"
                                                      title="">
-                                                    <a href="#"><img src="../../public/images/256_rsz_1andy-lee-642320-unsplash.jpg"
+                                                    <a href="#"><img src="../student1/public/images/256_rsz_1andy-lee-642320-unsplash.jpg"
                                                              alt="Avatar"
                                                              class="avatar-img rounded-circle"></a>
                                                 </div>
@@ -251,7 +251,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../../public/images/paths/react_40x40%402x.png"
+                                                            <img src="../student1/public/images/paths/react_40x40%402x.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -286,7 +286,7 @@
                                 <div class="popoverContainer d-none">
                                     <div class="media">
                                         <div class="media-left mr-12pt">
-                                            <img src="../../public/images/paths/react_40x40%402x.png"
+                                            <img src="../student1/public/images/paths/react_40x40%402x.png"
                                                  width="40"
                                                  height="40"
                                                  alt="Angular"
@@ -315,7 +315,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../../public/images/paths/devops_40x40%402x.png"
+                                                            <img src="../student1/public/images/paths/devops_40x40%402x.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -350,7 +350,7 @@
                                 <div class="popoverContainer d-none">
                                     <div class="media">
                                         <div class="media-left mr-12pt">
-                                            <img src="../../public/images/paths/devops_40x40%402x.png"
+                                            <img src="../student1/public/images/paths/devops_40x40%402x.png"
                                                  width="40"
                                                  height="40"
                                                  alt="Angular"
@@ -410,7 +410,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../../public/images/paths/redis_40x40%402x.png"
+                                                            <img src="../student1/public/images/paths/redis_40x40%402x.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -445,7 +445,7 @@
                                 <div class="popoverContainer d-none">
                                     <div class="media">
                                         <div class="media-left mr-12pt">
-                                            <img src="../../public/images/paths/redis_40x40%402x.png"
+                                            <img src="../student1/public/images/paths/redis_40x40%402x.png"
                                                  width="40"
                                                  height="40"
                                                  alt="Angular"
@@ -509,7 +509,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../../public/images/paths/mailchimp_40x40%402x.png"
+                                                            <img src="../student1/public/images/paths/mailchimp_40x40%402x.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -544,7 +544,7 @@
                                 <div class="popoverContainer d-none">
                                     <div class="media">
                                         <div class="media-left mr-12pt">
-                                            <img src="../../public/images/paths/mailchimp_40x40%402x.png"
+                                            <img src="../student1/public/images/paths/mailchimp_40x40%402x.png"
                                                  width="40"
                                                  height="40"
                                                  alt="Angular"
@@ -604,7 +604,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../../public/images/paths/swift_40x40%402x.png"
+                                                            <img src="../student1/public/images/paths/swift_40x40%402x.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -639,7 +639,7 @@
                                 <div class="popoverContainer d-none">
                                     <div class="media">
                                         <div class="media-left mr-12pt">
-                                            <img src="../../public/images/paths/swift_40x40%402x.png"
+                                            <img src="../student1/public/images/paths/swift_40x40%402x.png"
                                                  width="40"
                                                  height="40"
                                                  alt="Angular"
@@ -699,7 +699,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../../public/images/paths/wordpress_40x40%402x.png"
+                                                            <img src="../student1/public/images/paths/wordpress_40x40%402x.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -734,7 +734,7 @@
                                 <div class="popoverContainer d-none">
                                     <div class="media">
                                         <div class="media-left mr-12pt">
-                                            <img src="../../public/images/paths/wordpress_40x40%402x.png"
+                                            <img src="../student1/public/images/paths/wordpress_40x40%402x.png"
                                                  width="40"
                                                  height="40"
                                                  alt="Angular"
@@ -809,7 +809,7 @@
                             <div class="col-md-3">
                                 <h3>GIỚI THIỆU</h3>
                                 <ul>
-                                    <li><a href="index.html">Giới thiệu Sunshine English</a></li>
+                                    <li><a href="../student1/index.php">Giới thiệu Sunshine English</a></li>
                                     <li><a href="products.html">Tầm nhìn sứ mệnh & giá trị cốt lõi</a></li>
                                     <li><a href="#">Giải thưởng</a></li>
                                     <li><a href="#">Tại sao chọn Sunshine English</a></li>
@@ -904,13 +904,13 @@
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
-                                   href="student-dashboard.html">
+                                   href="#">
                                     <span class="sidebar-menu-text">Lịch học</span>
                                 </a>
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
-                                   href="student-my-courses.html">
+                                   href="#">
                                     <span class="sidebar-menu-text">Điểm danh</span>
                                 </a>
                             </li>
@@ -922,14 +922,14 @@
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
-                                   href="student-path.html">
+                                   href="#">
                                     <span class="sidebar-menu-text">Bài tập</span>
                                 </a>
                             </li>
                             </li>
                             <li class="sidebar-menu-item">
                                 <a class="sidebar-menu-button"
-                                   href="student-course.html">
+                                   href="#">
                                     <span class="sidebar-menu-text">Đánh giá</span>
                                 </a>
                             </li>
@@ -954,26 +954,26 @@
         <!-- // END Drawer Layout -->
 
         <!-- jQuery -->
-        <script src="../../public/vendor/jquery.min.js"></script>
+        <script src="../student1/public/vendor/jquery.min.js"></script>
 
         <!-- Bootstrap -->
-        <script src="../../public/vendor/popper.min.js"></script>
-        <script src="../../public/vendor/bootstrap.min.js"></script>
+        <script src="../student1/public/vendor/popper.min.js"></script>
+        <script src="../student1/public/vendor/bootstrap.min.js"></script>
 
         <!-- Perfect Scrollbar -->
-        <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+        <script src="../student1/public/vendor/perfect-scrollbar.min.js"></script>
 
         <!-- DOM Factory -->
-        <script src="../../public/vendor/dom-factory.js"></script>
+        <script src="../student1/public/vendor/dom-factory.js"></script>
 
         <!-- MDK -->
-        <script src="../../public/vendor/material-design-kit.js"></script>
+        <script src="../student1/public/vendor/material-design-kit.js"></script>
 
         <!-- App JS -->
-        <script src="../../public/js/app.js"></script>
+        <script src="../student1/public/js/app.js"></script>
 
         <!-- Preloader -->
-        <script src="../../public/js/preloader.js"></script>
+        <script src="../student1/public/js/preloader.js"></script>
 
     </body>
 

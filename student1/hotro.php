@@ -13,26 +13,26 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/vendor/spinkit.css"
+              href="../student1/public/vendor/spinkit.css"
               rel="stylesheet">
          <link type="text/css"
               href="../student1/public/css/style.css"
               rel="stylesheet">
               
         <link type="text/css"
-              href="../../public/vendor/perfect-scrollbar.css"
+              href="../student1/public/vendor/perfect-scrollbar.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/material-icons.css"
+              href="../student1/public/css/material-icons.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/fontawesome.css"
+              href="../student1/public/css/fontawesome.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/preloader.css"
+              href="../student1/public/css/preloader.css"
               rel="stylesheet">
         <link type="text/css"
-              href="../../public/css/app.css"
+              href="../student1/public/css/app.css"
               rel="stylesheet">
 
     </head>
@@ -109,15 +109,15 @@
 
                         <div class="nav-item dropdown">
                         <li class="nav-item">
-                            <a href="signup.html"
+                            <a href="#"
                                class="btn btn-outline-dark">LOAN NGUYỄN</a>
                         </li>
                             <div class="dropdown-menu dropdown-menu-right">
                                 <div class="dropdown-header"><strong>Account</strong></div>
                                 <a class="dropdown-item"
-                                   href="edit-account.html">Edit Account</a>
+                                   href="#l">Edit Account</a>
                                 <a class="dropdown-item"
-                                   href="login.html">Logout</a>
+                                   href="#">Logout</a>
                             </div>
                         </div>
                     </div>
@@ -336,7 +336,7 @@
                             <div class="col-md-3">
                                 <h3>GIỚI THIỆU</h3>
                                 <ul>
-                                    <li><a href="index.html">Giới thiệu Sunshine English</a></li>
+                                    <li><a href="../student1/index.php">Giới thiệu Sunshine English</a></li>
                                     <li><a href="products.html">Tầm nhìn sứ mệnh & giá trị cốt lõi</a></li>
                                     <li><a href="#">Giải thưởng</a></li>
                                     <li><a href="#">Tại sao chọn Sunshine English</a></li>
@@ -427,13 +427,13 @@
                        </li>
                        <li class="sidebar-menu-item">
                            <a class="sidebar-menu-button"
-                              href="student-dashboard.html">
+                              href="#">
                                <span class="sidebar-menu-text">Lịch học</span>
                            </a>
                        </li>
                        <li class="sidebar-menu-item">
                            <a class="sidebar-menu-button"
-                              href="student-my-courses.html">
+                              href="#">
                                <span class="sidebar-menu-text">Điểm danh</span>
                            </a>
                        </li>
@@ -445,13 +445,13 @@
                        </li>
                        <li class="sidebar-menu-item">
                            <a class="sidebar-menu-button"
-                              href="student-path.html">
+                              href="#">
                                <span class="sidebar-menu-text">Bài tập</span>
                            </a>
                        </li>
                        <li class="sidebar-menu-item">
                            <a class="sidebar-menu-button"
-                              href="student-course.html">
+                              href="#">
                                <span class="sidebar-menu-text">Đánh giá</span>
                            </a>
                        </li>
@@ -467,26 +467,26 @@
            </div>
        </div>
         <!-- jQuery -->
-        <script src="../../public/vendor/jquery.min.js"></script>
+        <script src="../student1/public/vendor/jquery.min.js"></script>
 
         <!-- Bootstrap -->
-        <script src="../../public/vendor/popper.min.js"></script>
-        <script src="../../public/vendor/bootstrap.min.js"></script>
+        <script src="../student1/public/vendor/popper.min.js"></script>
+        <script src="../student1/public/vendor/bootstrap.min.js"></script>
 
         <!-- Perfect Scrollbar -->
-        <script src="../../public/vendor/perfect-scrollbar.min.js"></script>
+        <script src="../student1/public/vendor/perfect-scrollbar.min.js"></script>
 
         <!-- DOM Factory -->
-        <script src="../../public/vendor/dom-factory.js"></script>
+        <script src="../student1/public/vendor/dom-factory.js"></script>
 
         <!-- MDK -->
-        <script src="../../public/vendor/material-design-kit.js"></script>
+        <script src="../student1/public/vendor/material-design-kit.js"></script>
 
         <!-- App JS -->
-        <script src="../../public/js/app.js"></script>
+        <script src="../student1/public/js/app.js"></script>
 
         <!-- Preloader -->
-        <script src="../../public/js/preloader.js"></script>
+        <script src="../student1/public/js/preloader.js"></script>
 
     </body>
 </html>
