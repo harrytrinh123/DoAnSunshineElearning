@@ -63,9 +63,8 @@ footer {
     color: #fff;
     font-size: 14px;
     width: 100%;
-    background-color: rgb(12, 100, 91);
     padding: 20px;
-    margin-top: 20px !important;
+    background-color:#fff;--gray;
 }
 
 footer h3 {
@@ -85,12 +84,12 @@ footer ul {
 
 footer ul li {
     line-height: 30px;
-    color: #fff;
+    color:#343a40;--primary;
 }
 
 footer ul li a {
     text-decoration: none;
-    color: #fff;
+    color:#343a40;--primary;
 }
 
 footer ul li a:hover {
