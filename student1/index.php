@@ -251,7 +251,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../student1/public/images/paths/react_40x40%402x.png"
+                                                            <img src="../student1/public/images/op/bai1_1.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -286,7 +286,7 @@
                                 <div class="popoverContainer d-none">
                                     <div class="media">
                                         <div class="media-left mr-12pt">
-                                            <img src="../student1/public/images/paths/react_40x40%402x.png"
+                                            <img src="../student1/public/images/op/bai1_1.png"
                                                  width="40"
                                                  height="40"
                                                  alt="Angular"
@@ -315,7 +315,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../student1/public/images/paths/devops_40x40%402x.png"
+                                                            <img src="../student1/public/images/op/bai2_2.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -347,55 +347,6 @@
                                     </div>
                                 </div>
 
-                                <div class="popoverContainer d-none">
-                                    <div class="media">
-                                        <div class="media-left mr-12pt">
-                                            <img src="../student1/public/images/paths/devops_40x40%402x.png"
-                                                 width="40"
-                                                 height="40"
-                                                 alt="Angular"
-                                                 class="rounded">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="card-title">Dev Ops</div>
-                                            <p class="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p class="mt-16pt text-70">Learn the fundamentals of working with Dev Ops and how to create basic applications.</p>
-
-                                    <div class="my-32pt">
-                                        <div class="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div class="d-flex align-items-center mr-8pt">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html"
-                                               class="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html"
-                                               class="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <small class="text-50 mr-8pt">Your rating</small>
-                                        <div class="rating mr-8pt">
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small class="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
 
                             <div class="col-sm-4 card-group-row__col">
@@ -410,7 +361,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../student1/public/images/paths/redis_40x40%402x.png"
+                                                            <img src="../student1/public/images/op/bai3_3.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -442,54 +393,6 @@
                                     </div>
                                 </div>
 
-                                <div class="popoverContainer d-none">
-                                    <div class="media">
-                                        <div class="media-left mr-12pt">
-                                            <img src="../student1/public/images/paths/redis_40x40%402x.png"
-                                                 width="40"
-                                                 height="40"
-                                                 alt="Angular"
-                                                 class="rounded">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="card-title">Redis</div>
-                                            <p class="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p class="mt-16pt text-70">Learn the fundamentals of working with Redis and how to create basic applications.</p>
-
-                                    <div class="my-32pt">
-                                        <div class="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div class="d-flex align-items-center mr-8pt">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html"
-                                               class="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html"
-                                               class="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <small class="text-50 mr-8pt">Your rating</small>
-                                        <div class="rating mr-8pt">
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small class="text-50">4/5</small>
-                                    </div>
-                                </div>
 
                             </div>
 
@@ -509,7 +412,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../student1/public/images/paths/mailchimp_40x40%402x.png"
+                                                            <img src="../student1/public/images/op/bai4_4.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -541,55 +444,6 @@
                                     </div>
                                 </div>
 
-                                <div class="popoverContainer d-none">
-                                    <div class="media">
-                                        <div class="media-left mr-12pt">
-                                            <img src="../student1/public/images/paths/mailchimp_40x40%402x.png"
-                                                 width="40"
-                                                 height="40"
-                                                 alt="Angular"
-                                                 class="rounded">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="card-title">MailChimp</div>
-                                            <p class="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p class="mt-16pt text-70">Learn the fundamentals of working with MailChimp and how to create basic applications.</p>
-
-                                    <div class="my-32pt">
-                                        <div class="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div class="d-flex align-items-center mr-8pt">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html"
-                                               class="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html"
-                                               class="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <small class="text-50 mr-8pt">Your rating</small>
-                                        <div class="rating mr-8pt">
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small class="text-50">4/5</small>
-                                    </div>
-                                </div>
-
                             </div>
 
                             <div class="col-sm-4 card-group-row__col">
@@ -604,7 +458,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../student1/public/images/paths/swift_40x40%402x.png"
+                                                            <img src="../student1/public/images/op/bai5_5.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -636,55 +490,7 @@
                                     </div>
                                 </div>
 
-                                <div class="popoverContainer d-none">
-                                    <div class="media">
-                                        <div class="media-left mr-12pt">
-                                            <img src="../student1/public/images/paths/swift_40x40%402x.png"
-                                                 width="40"
-                                                 height="40"
-                                                 alt="Angular"
-                                                 class="rounded">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="card-title">Swift</div>
-                                            <p class="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p class="mt-16pt text-70">Learn the fundamentals of working with Swift and how to create basic applications.</p>
-
-                                    <div class="my-32pt">
-                                        <div class="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div class="d-flex align-items-center mr-8pt">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html"
-                                               class="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html"
-                                               class="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <small class="text-50 mr-8pt">Your rating</small>
-                                        <div class="rating mr-8pt">
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small class="text-50">4/5</small>
-                                    </div>
-                                </div>
-
+                               
                             </div>
 
                             <div class="col-sm-4 card-group-row__col">
@@ -699,7 +505,7 @@
                                                 <div class="d-flex align-items-center">
                                                     <div class="rounded mr-12pt z-0 o-hidden">
                                                         <div class="overlay">
-                                                            <img src="../student1/public/images/paths/wordpress_40x40%402x.png"
+                                                            <img src="../student1/public/images/op/bai6_6.png"
                                                                  width="40"
                                                                  height="40"
                                                                  alt="Angular"
@@ -728,55 +534,6 @@
 
                                         </div>
 
-                                    </div>
-                                </div>
-
-                                <div class="popoverContainer d-none">
-                                    <div class="media">
-                                        <div class="media-left mr-12pt">
-                                            <img src="../student1/public/images/paths/wordpress_40x40%402x.png"
-                                                 width="40"
-                                                 height="40"
-                                                 alt="Angular"
-                                                 class="rounded">
-                                        </div>
-                                        <div class="media-body">
-                                            <div class="card-title">WordPress</div>
-                                            <p class="text-50 d-flex lh-1 mb-0 small">18 courses</p>
-                                        </div>
-                                    </div>
-
-                                    <p class="mt-16pt text-70">Learn the fundamentals of working with WordPress and how to create basic applications.</p>
-
-                                    <div class="my-32pt">
-                                        <div class="d-flex align-items-center mb-8pt justify-content-center">
-                                            <div class="d-flex align-items-center mr-8pt">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">access_time</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>50 minutes left</small></p>
-                                            </div>
-                                            <div class="d-flex align-items-center">
-                                                <span class="material-icons icon-16pt text-50 mr-4pt">play_circle_outline</span>
-                                                <p class="flex text-50 lh-1 mb-0"><small>12 lessons</small></p>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center">
-                                            <a href="student-path.html"
-                                               class="btn btn-primary mr-8pt">Resume</a>
-                                            <a href="student-path.html"
-                                               class="btn btn-outline-secondary ml-0">Start over</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-flex align-items-center">
-                                        <small class="text-50 mr-8pt">Your rating</small>
-                                        <div class="rating mr-8pt">
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star</span></span>
-                                            <span class="rating__item"><span class="material-icons text-primary">star_border</span></span>
-                                        </div>
-                                        <small class="text-50">4/5</small>
                                     </div>
                                 </div>
 
