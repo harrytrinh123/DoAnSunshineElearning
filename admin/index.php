@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -143,7 +144,8 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                        <li>
+                            <a href="quanlyhs.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Quản lý học sinh</span>
                             </a>
@@ -408,11 +410,11 @@
                                 <div class="col-sm-6">
                                     <script>
                                         document.write(new Date().getFullYear())
-                                    </script> © Skote.
+                                    </script> © Sunshine Team.
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="text-sm-right d-none d-sm-block">
-                                        Design & Develop by Themesbrand
+                                        Design & Develop by Sunshine Team
                                     </div>
                                 </div>
                             </div>

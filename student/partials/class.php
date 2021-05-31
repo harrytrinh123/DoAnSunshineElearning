@@ -60,15 +60,15 @@ class csdl
 						<td width="200">Dung tích</td>
 					  </tr>';
 		$dem = 1;
-		while($row = mysql_fetch_array($kq))
+		while($result = mysql_fetch_array($kq))
 			{
-				$id = $row['id'];
-				$tensp = $row['tensp'];
-				$gia = $row['gia'];
-				$hinh = $row['hinh'];
-				$kieudang = $row['kieudang'];
-				$nsx = $row['nsx'];
-				$dungtich = $row['dungtich'];
+				$id = $result['id'];
+				$tensp = $result['tensp'];
+				$gia = $result['gia'];
+				$hinh = $result['hinh'];
+				$kieudang = $result['kieudang'];
+				$nsx = $result['nsx'];
+				$dungtich = $result['dungtich'];
 			
 			echo '<tr align="left" valign="middle">
 					<td>'.$dem.'</td>
@@ -96,10 +96,10 @@ class csdl
 	if($i>0)
 		{
 	
-		while($row = mysql_fetch_array($kq))
+		while($result = mysql_fetch_array($kq))
 			{
-				$id = $row['id'];
-				$tencty = $row['tencty'];
+				$id = $result['id'];
+				$tencty = $result['tencty'];
 			echo '<a style="color:black " href="?id='.$id.'">'.$tencty.'</a>';
 			echo '<br><br>';
 
@@ -118,10 +118,10 @@ class csdl
 		{
 		echo '<select name="congty" id="congty">
               <option value="0">Mời chọn công ty</option>';
-		while($row = mysql_fetch_array($kq))
+		while($result = mysql_fetch_array($kq))
 			{
-				$id = $row['id'];
-				$tencty = $row['tencty'];
+				$id = $result['id'];
+				$tencty = $result['tencty'];
 				echo '<option value="'.$id.'">'.$tencty.'</op
 				tion>';
 		}
@@ -136,11 +136,11 @@ class csdl
 		$ketqua= mysql_query($sql,$link);
 		$i = mysql_num_rows($ketqua);
 		if($i>0){
-			while($row=mysql_fetch_array($ketqua)){
-				$id=$row['id'];
-				$tensp=$row['tensp'];
-				$gia=$row['gia'];
-				$hinh=$row['hinh'];
+			while($result=mysql_fetch_array($ketqua)){
+				$id=$result['id'];
+				$tensp=$result['tensp'];
+				$gia=$result['gia'];
+				$hinh=$result['hinh'];
 				
 				echo '<div class="col-lg-4 col-md-6">
 						<div class="product-item">
@@ -241,17 +241,17 @@ class csdl
 			$ketqua= mysql_query($sql,$link);
 			$i = mysql_num_rows($ketqua);
 			if($i>0){
-				while($row=mysql_fetch_array($ketqua)){
-					$id=$row['id'];
-					$tensp=$row['tensp'];
-					$gia=$row['gia'];
-					$hinh=$row['hinh'];
-					$kieudang = $row['kieudang'];
-					$nsx = $row['nsx'];
-					$dungtich = $row['dungtich'];
-					$hinh1=$row['hinh1'];
-					$hinh2=$row['hinh2'];
-					$hinh3=$row['hinh3'];
+				while($result=mysql_fetch_array($ketqua)){
+					$id=$result['id'];
+					$tensp=$result['tensp'];
+					$gia=$result['gia'];
+					$hinh=$result['hinh'];
+					$kieudang = $result['kieudang'];
+					$nsx = $result['nsx'];
+					$dungtich = $result['dungtich'];
+					$hinh1=$result['hinh1'];
+					$hinh2=$result['hinh2'];
+					$hinh3=$result['hinh3'];
 
 					echo '<div class="products">
 							  <div class="container">
@@ -342,11 +342,11 @@ class csdl
 		$ketqua= mysql_query($sql,$link);
 		$i = mysql_num_rows($ketqua);
 		if($i>0){
-			while($row=mysql_fetch_array($ketqua)){
-				$id=$row['id'];
-				$tensp=$row['tensp'];
-				$gia=$row['gia'];
-				$hinh=$row['hinh'];
+			while($result=mysql_fetch_array($ketqua)){
+				$id=$result['id'];
+				$tensp=$result['tensp'];
+				$gia=$result['gia'];
+				$hinh=$result['hinh'];
 
 				echo '<div class="col-lg-12 col-md-12">
 						<div class="product-item">
@@ -369,14 +369,14 @@ class csdl
 		$ketqua= mysql_query("select g.id as idcart, s.tensp,s.hinh,s.gia,g.SoLuong,g.TongTien from giohang g join sanpham s on g.IdSanPham = s.id",$link);
 		$i = mysql_num_rows($ketqua);
 		if($i>0){
-			while($row=mysql_fetch_array($ketqua)){
-				$idcart=$row['idcart'];
-				$tensp=$row['tensp'];
-				$hinh=$row['hinh'];
-				$gia=$row['gia'];
-				$soluong=$row['SoLuong'];
-				$tongtien=$row['TongTien'];
-				$cc = $row['SoLuong'];
+			while($result=mysql_fetch_array($ketqua)){
+				$idcart=$result['idcart'];
+				$tensp=$result['tensp'];
+				$hinh=$result['hinh'];
+				$gia=$result['gia'];
+				$soluong=$result['SoLuong'];
+				$tongtien=$result['TongTien'];
+				$cc = $result['SoLuong'];
 				echo '
 				<form action="#" method="post" class="form">
 					<tr>
@@ -419,17 +419,17 @@ class csdl
 		$kq= mysql_query("select d.id, d.tenkh, d.sdt, d.diachi, d.ghichu, d.trangthai, s.tensp, g.soluong, g.tongtien from donhang d join giohang g on d.idGioHang = g.id join sanpham s on g.IdSanPham = s.id",$link);
 		$i = mysql_num_rows($kq);
 		if($i>0){
-			while($row=mysql_fetch_array($kq)){
+			while($result=mysql_fetch_array($kq)){
 				
-				$id=$row['id'];
-				$tenkh=$row['tenkh'];
-				$sdt=$row['sdt'];
-				$diachi=$row['diachi'];
-				$ghichu=$row['ghichu'];
-				$tensp=$row['tensp'];
-				$soluong=$row['soluong'];
-				$tongtien=$row['tongtien'];
-				$trangthai = $row['trangthai'];
+				$id=$result['id'];
+				$tenkh=$result['tenkh'];
+				$sdt=$result['sdt'];
+				$diachi=$result['diachi'];
+				$ghichu=$result['ghichu'];
+				$tensp=$result['tensp'];
+				$soluong=$result['soluong'];
+				$tongtien=$result['tongtien'];
+				$trangthai = $result['trangthai'];
 				echo '
 				<tr>
 					<div>
