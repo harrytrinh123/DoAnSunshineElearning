@@ -11,7 +11,7 @@
             </form>
           </div>
 
-          <a href="../student1/index.php" class="sidebar-brand ">
+          <a href="../student/index.php" class="sidebar-brand ">
 
             <span class="avatar avatar-xl sidebar-brand-icon h-auto">
 
@@ -24,22 +24,17 @@
           <ul class="sidebar-menu">
 
             <li class="sidebar-menu-item ">
-              <a class="sidebar-menu-button" href="../student1/index.php">
+              <a class="sidebar-menu-button" href="../index.php">
                 <span class="sidebar-menu-text">Home</span>
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="../student1/edit-account-profile.html">
+              <a class="sidebar-menu-button" href="testnangluc.php">
                 <span class="sidebar-menu-text">Test năng lực</span>
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="../student1/edit-account-profile.html">
-                <span class="sidebar-menu-text">Cập nhật thông tin</span>
-              </a>
-            </li>
-            <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="../student1/signup-payment.html">
+              <a class="sidebar-menu-button" href="chonlop.php">
                 <span class="sidebar-menu-text">Đăng ký khóa học</span>
               </a>
             </li>
@@ -54,7 +49,7 @@
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="../student1/student-dashboard.html">
+              <a class="sidebar-menu-button" href="../student/student-dashboard.html">
                 <span class="sidebar-menu-text">Kết quả học tập</span>
               </a>
             </li>
@@ -69,8 +64,13 @@
               </a>
             </li>
             <li class="sidebar-menu-item active">
-              <a class="sidebar-menu-button" href="../student1/hotro.php">
+              <a class="sidebar-menu-button" href="hotro.php">
                 <span class="sidebar-menu-text">Hỗ trợ</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item">
+              <a class="sidebar-menu-button" href="account.php">
+                <span class="sidebar-menu-text">Cập nhật thông tin</span>
               </a>
             </li>
           </ul>

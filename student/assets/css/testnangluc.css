@@ -83,8 +83,8 @@ h4 {
 }
 
 .item {
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
     border: 2px solid rgb(179, 33, 179);
     display: flex;
     flex-direction: column;
@@ -98,4 +98,8 @@ h4 {
     font-weight: bold;
     font-size: 25px;
     margin-top: -25px;
+}
+
+.item p {
+    font-size: 13px;
 }

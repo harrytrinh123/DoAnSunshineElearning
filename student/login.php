@@ -21,15 +21,16 @@ session_start();
 
 if(isset($_POST['login'])) {
   include("./partials/connect.php");
-  $email = $_POST['uName'];
-  $password = $_POST['pWord'];
-  $sql = "SELECT * FROM account WHERE Username = '$email' AND Password = '$password'";
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+  $sql = "SELECT * FROM account WHERE Username = '$username' AND Password = '$password'";
   $results = $connect->query($sql);
 
   $final = $results->fetch_assoc();
-  $_SESSION['email'] = $final['Username'];
+  
+  $_SESSION['username'] = $final['Username'];
   $_SESSION['password'] = $final['Password'];
-  if($email=$final['Username'] AND  $password=$final['Password']) {
+  if($username=$final['Username'] AND  $password=$final['Password']) {
     header('location: index.php');
   }
   else {
@@ -96,11 +97,11 @@ if(isset($_POST['login'])) {
         <form action="login.php" method="POST">
           <div class="form-group">
             <label for="unam">Tài khoản:</label>
-            <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="uName" required>
+            <input type="text" class="form-control" id="uname" placeholder="Nhập tài khoản" name="username" required>
           </div>
           <div class="form-group">
             <label for="pwd">Mật khẩu:</label>
-            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pWord" required>
+            <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="password" required>
           </div>
           <div class="form-group">
             <input type="checkbox" id="remeber"> Nhớ tài khoản
