@@ -75,7 +75,7 @@ include("./partials/session.php");
             <label class="form-label">Your photo</label>
             <div class="media align-items-center">
               <a href="#" class="media-left mr-16pt">
-                <img src="./public/images/people/110/woman-1.jpg" alt="people" width="56" class="rounded-circle" />
+                <img src="./public/images/people/110/avatar.jpg" alt="people" width="56" class="rounded-circle" />
               </a>
               <div class="media-body">
                 <div class="custom-file">

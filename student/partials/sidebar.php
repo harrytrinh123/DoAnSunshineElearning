@@ -15,7 +15,7 @@
 
             <span class="avatar avatar-xl sidebar-brand-icon h-auto">
 
-              <span class="avatar-title rounded bg-primary"><img src="https://luma.humatheme.com/public/images/illustration/student/128/white.svg" class="img-fluid" alt="logo" /></span>
+              <span class="avatar-title rounded bg-primary"><img src="./public/images/people/110/avatar.jpg" class="img-fluid" alt="logo" /></span>
 
             </span>
 
@@ -39,7 +39,7 @@
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="student-dashboard.html">
+              <a class="sidebar-menu-button" href="lichhoc.php">
                 <span class="sidebar-menu-text">Lịch học</span>
               </a>
             </li>
