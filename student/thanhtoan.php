@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<?php 
+  include("./partials/session.php");
+?>
 
 <head>
   <meta charset="utf-8">

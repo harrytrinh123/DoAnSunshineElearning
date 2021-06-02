@@ -3,8 +3,18 @@
     <div class="col-md-10"></div>
     <div class="col-md-2">
       <a class href="#" id="cuaHang"><i class="fas fa-store"></i></a>
-      <a class="btn-login" href="register.php">Đăng ký</a> |
-      <a class="btn-login" href="login.php">Đăng nhập</a>
+      <?php 
+        session_start();
+        if (empty($_SESSION['username'])) {
+          echo '<a class="btn-login" href="register.php">Đăng ký</a> |
+          <a class="btn-login" href="login.php">Đăng nhập</a>';
+          
+        }
+        else {
+          echo '<a class="btn-login" href="account.php">'.$_SESSION['username'].'</a> |
+          <a class="btn-login" href="./partials/logout.php">Logout</a>';
+        }
+      ?>
     </div>
   </div>
 </div>

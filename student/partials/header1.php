@@ -33,12 +33,12 @@
 
         <div class="nav-item dropdown">
             <li class="nav-item">
-                <a href="signup.html" class="btn btn-outline-dark">LOAN NGUYỄN</a>
+                <a class="btn btn-outline-dark"><?php echo $_SESSION['username'] ?></a>
             </li>
             <div class="dropdown-menu dropdown-menu-right">
                 <div class="dropdown-header"><strong>Account</strong></div>
-                <a class="dropdown-item" href="edit-account.html">Edit Account</a>
-                <a class="dropdown-item" href="login.html">Logout</a>
+                <a class="dropdown-item" href="../account.php">Edit Account</a>
+                <a class="dropdown-item" href="../partials/logout.php">Logout</a>
             </div>
         </div>
     </div>

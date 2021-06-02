@@ -19,7 +19,7 @@
 
             </span>
 
-            <span>Nguyễn Thị Loan</span>
+            <span><?php echo $_SESSION['username']?></span>
           </a>
           <ul class="sidebar-menu">
 
@@ -63,7 +63,7 @@
                 <span class="sidebar-menu-text">Đánh giá</span>
               </a>
             </li>
-            <li class="sidebar-menu-item active">
+            <li class="sidebar-menu-item">
               <a class="sidebar-menu-button" href="hotro.php">
                 <span class="sidebar-menu-text">Hỗ trợ</span>
               </a>
@@ -71,6 +71,11 @@
             <li class="sidebar-menu-item">
               <a class="sidebar-menu-button" href="account.php">
                 <span class="sidebar-menu-text">Cập nhật thông tin</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item">
+              <a class="sidebar-menu-button" href="./partials/logout.php">
+                <span class="sidebar-menu-text">Logout</span>
               </a>
             </li>
           </ul>

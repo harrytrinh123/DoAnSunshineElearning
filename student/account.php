@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+<?php 
+  include("./partials/session.php");
+?>
 
 <head>
   <meta charset="utf-8">
@@ -13,13 +16,14 @@
   <link type="text/css" href="./public/vendor/perfect-scrollbar.css" rel="stylesheet">
   <link type="text/css" href="./public/css/material-icons.css" rel="stylesheet">
   <link type="text/css" href="./public/css/fontawesome.css" rel="stylesheet">
+  
 
   <!-- Preloader -->
   <link type="text/css" href="./public/css/preloader.css" rel="stylesheet">
 
   <!-- App CSS -->
   <link type="text/css" href="./public/css/app.css" rel="stylesheet">
-  <?php include("./partials/headlibs.php");?>
+  <?php include("./partials/headlibs.php"); ?>
 
 </head>
 
@@ -39,7 +43,7 @@
   <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
     <div class="mdk-drawer-layout__content page-content">
       <!-- NAV -->
-      <?php include("./partials/header1.php");?>
+      <?php include("./partials/header1.php"); ?>
 
       <div class="pt-32pt">
         <div class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
@@ -54,6 +58,14 @@
         </div>
       </div>
 
+      <?php 
+        $username = $_SESSION['username'];
+        include("./partials/connect.php");
+        $sql = "SELECT * FROM account AS a
+        JOIN student AS s
+        ON a.UserName = b.UserName
+        WHERE UserName = '$username'";
+      ?>
 
       <div class="page-section container page__container">
         <div class="page-separator">
@@ -101,27 +113,22 @@
                 EMAIL</small>
             </div>
             <div class="form-group">
-              <label class="form-label">About you</label>
-              <textarea rows="3" class="form-control" placeholder="About you ..."></textarea>
+              <label class="form-label">Mật khẩu</label>
+              <input class="form-control" type="password" placeholder="Nhập mật khẩu...">
             </div>
+            <div class="form-group">
+              <label class="form-label">Nhập lại mật khẩu</label>
+              <input class="form-control" type="password" placeholder="Nhập lại mật khẩu...">
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" checked id="customCheck2">
+                <label class="custom-control-label" for="customCheck2">Cho phép mọi người có thể xem hồ sơ
+                  của bạn</label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="btn-Save">Save changes</button>
           </form>
-          <div class="form-group">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" checked id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">Hiển thị tên trên thật trên hồ sơ của
-                bạn</label>
-            </div>
-          </div>
-
-          <div class="form-group">
-            <div class="custom-control custom-checkbox">
-              <input type="checkbox" class="custom-control-input" checked id="customCheck2">
-              <label class="custom-control-label" for="customCheck2">Cho phép mọi người có thể xem hồ sơ
-                của bạn</label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Save changes</button>
-          <button type="submit" class="btn btn-primary">Cancel</button>
 
         </div>
 
@@ -130,7 +137,7 @@
       <!-- // END Page Content -->
 
       <!-- Footer -->
-      <?php include("./partials/footer.php");?>
+      <?php include("./partials/footer.php"); ?>
 
       <!-- // END Footer -->
 
@@ -138,7 +145,7 @@
 
     <!-- // END drawer-layout__content -->
 
-    <?php include("./partials/sidebar.php");?>
+    <?php include("./partials/sidebar.php"); ?>
 
     <!-- // END Drawer -->
 
