@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<?php 
-  include("./partials/session.php");
+<?php
+include("./partials/session.php");
 ?>
 
 <head>
@@ -16,7 +16,7 @@
   <link type="text/css" href="./public/vendor/perfect-scrollbar.css" rel="stylesheet">
   <link type="text/css" href="./public/css/material-icons.css" rel="stylesheet">
   <link type="text/css" href="./public/css/fontawesome.css" rel="stylesheet">
-  
+
 
   <!-- Preloader -->
   <link type="text/css" href="./public/css/preloader.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 
 <body class="layout-app ">
 
-  <div class="preloader">
+  <!-- <div class="preloader">
     <div class="sk-chase">
       <div class="sk-chase-dot"></div>
       <div class="sk-chase-dot"></div>
@@ -38,12 +38,20 @@
       <div class="sk-chase-dot"></div>
       <div class="sk-chase-dot"></div>
     </div>
-  </div>
+  </div> -->
 
   <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
     <div class="mdk-drawer-layout__content page-content">
       <!-- NAV -->
-      <?php include("./partials/header1.php"); ?>
+      <?php
+      include("./partials/header1.php");
+      include("./partials/connect.php");
+      $uname = $_SESSION['username'];
+      $sql = "SELECT * FROM student JOIN account ON student.Username=account.Username WHERE student.Username='$uname'";
+      $result = $connect->query($sql);
+      $final = $result->fetch_assoc();
+
+      ?>
 
       <div class="pt-32pt">
         <div class="container page__container d-flex flex-column flex-md-row align-items-center text-center text-sm-left">
@@ -57,15 +65,6 @@
 
         </div>
       </div>
-
-      <?php 
-        $username = $_SESSION['username'];
-        include("./partials/connect.php");
-        $sql = "SELECT * FROM account AS a
-        JOIN student AS s
-        ON a.UserName = b.UserName
-        WHERE UserName = '$username'";
-      ?>
 
       <div class="page-section container page__container">
         <div class="page-separator">
@@ -88,37 +87,38 @@
           </div>
 
           <div class="form-group">
+            <input id="stID" type="hidden" value="<?php echo $final['ID'] ?>">
             <label class="form-label"> Profile name</label>
-            <input type="text" class="form-control" value="Nguyễn Thị Loan" placeholder="Your profile name ...">
+            <input id="studentname" type="text" class="form-control" value="<?php echo $final['StudentName'] ?>">
           </div>
 
-          <form>
+          <!-- <form> -->
             <div class="form-group">
               <label class="form-label">Date of birth</label>
-              <input type="text" class="form-control" value="07-02-2000" placeholder="Your Date of birth...">
+              <input id="dateofbirth" type="date" class="form-control" value="<?php echo $final['DateOfBirth'] ?>" placeholder="Your Date of birth...">
             </div>
 
             <div class="form-group">
               <label class="form-label">Phone number</label>
-              <input type="text" class="form-control" value="0375072437" placeholder="Your phone number...">
+              <input id="phonenumber" type="text" class="form-control" value="<?php echo $final['PhoneNumber'] ?>" placeholder="Your phone number...">
             </div>
             <div class="form-group">
               <label class="form-label">Address</label>
-              <input type="text" class="form-control" value="12 Nguyễn Văn Bảo - Phường 4 - Gò Vấp - Hồ Chí Minh" placeholder="Your address...">
+              <input id="address" type="text" class="form-control" value="<?php echo $final['Address'] ?>">
             </div>
             <div class="form-group">
               <label class="form-label">Email address</label>
-              <input type="email" class="form-control" value="nguyenthiloan2000gialai@gmail.com" placeholder="Your email address ...">
+              <input id="email" type="email" class="form-control" value="<?php echo $final['Email'] ?>">
               <small class="form-text text-muted">Nếu bạn cập nhật lại email của bạn thì cần phải xác nhận
                 EMAIL</small>
             </div>
             <div class="form-group">
               <label class="form-label">Mật khẩu</label>
-              <input class="form-control" type="password" placeholder="Nhập mật khẩu...">
+              <input id="password" minlength="6" maxlength="16" class="form-control" type="password" placeholder="Nhập mật khẩu...">
             </div>
             <div class="form-group">
               <label class="form-label">Nhập lại mật khẩu</label>
-              <input class="form-control" type="password" placeholder="Nhập lại mật khẩu...">
+              <input id="passwordNL" class="form-control" type="password" placeholder="Nhập lại mật khẩu...">
             </div>
             <div class="form-group">
               <div class="custom-control custom-checkbox">
@@ -127,8 +127,9 @@
                   của bạn</label>
               </div>
             </div>
-            <button type="submit" class="btn btn-primary" id="btn-Save">Save changes</button>
-          </form>
+
+            <button id="btn-Save" type="submit" class="btn btn-primary" id="btn-Save">Save changes</button>
+          <!-- </form> -->
 
         </div>
 
@@ -138,8 +139,33 @@
 
       <!-- Footer -->
       <?php include("./partials/footer.php"); ?>
-
       <!-- // END Footer -->
+
+      <script>
+        $('#btn-Save').click(function() {
+          var studentID = $('#stID').val();
+          var name = $('#studentname').val();
+          var dateofbirth = $('#dateofbirth').val();
+          var phonenumber = $('#phonenumber').val();
+          var address = $('#address').val();
+          var email = $('#email').val();
+          $.ajax({
+            type: "POST", //type of method
+            url: "accounthandler.php", //your page
+            data: {
+              studentID: studentID,
+              name: name,
+              dob: dateofbirth,
+              phonenumber: phonenumber,
+              ar: address,
+              email: email
+            }, // passing the values
+            success: function(res) {
+              alert("Cập nhật thành công");    
+            }
+          });
+        });
+      </script>
 
     </div>
 

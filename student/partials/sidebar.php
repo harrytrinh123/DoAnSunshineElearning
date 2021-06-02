@@ -70,7 +70,7 @@
             </li>
             <li class="sidebar-menu-item">
               <a class="sidebar-menu-button" href="account.php">
-                <span class="sidebar-menu-text">Cập nhật thông tin</span>
+                <span class="sidebar-menu-text">Thông tin cá nhân</span>
               </a>
             </li>
             <li class="sidebar-menu-item">
