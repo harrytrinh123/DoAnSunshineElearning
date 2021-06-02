@@ -189,12 +189,12 @@ require_once ('dbhelp.php');
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0 font-size-18">DANH SÁCH HỌC SINH</h4>
+                                <h4 class="mb-0 font-size-18">CHI TIẾT YÊU CẦU HỖ TRỢ</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">MENU</a></li>
-                                        <li class="breadcrumb-item active">DANH SÁCH HỌC SINH</li>
+                                        <li class="breadcrumb-item active">CHI TIẾT YÊU CẦU HỖ TRỢ</li>
                                     </ol>
                                 </div>
                             </div>
@@ -213,31 +213,29 @@ require_once ('dbhelp.php');
 					<thead style = "text-align: center;">
 						<tr >
 							<th >STT</th>
-							<th>StudentName</th>
-							<th >DateOfBirth</th>
-                            <th>Address</th>
-                            <th >PhoneNumber</th>
+							<th>Content</th>
+							<th >Answer</th>
+                            <th>StudentID</th>
+                            <th width="60px"></th>
 						
 						</tr>
 					</thead>
 					<tbody>
 <?php
-if (isset($_GET['s']) && $_GET['s'] != '') {
-	$sql = 'select * from student where fullname like "%'.$_GET['s'].'%"';
-} else {
-	$sql = 'select * from student';
-}
 
-$studentList = executeResult($sql);
+	$sql = 'select * from support';
+
+
+$supportList = executeResult($sql);
 
 $index = 1;
-foreach ($studentList as $std) {
+foreach ($supportList as $std) {
 	echo '<tr>
             <td>'.($index++).'</td>
-			<td>'.$std['StudentName'].'</td>
-			<td>'.$std['DateOfBirth'].'</td>
-            <td>'.$std['Address'].'</td>
-            <td>'.$std['PhoneNumber'].'</td>
+			<td>'.$std['Content'].'</td>
+			<td>'.$std['Answer'].'</td>
+            <td>'.$std['StudentID'].'</td>
+            <td><button class="btn btn-warning" >Chi tiết</button></td>
 			
 		</tr>';
 }
