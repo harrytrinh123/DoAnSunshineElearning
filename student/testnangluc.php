@@ -1,21 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
+<?php 
+  include("./partials/session.php");
+?>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Chọn lớp phù hợp với bạn</title>
+  <meta name="robots" content="noindex">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap" rel="stylesheet">
+  <link type="text/css" href="../student/public/vendor/spinkit.css" rel="stylesheet">
+  <link type="text/css" href="../student/public/css/style.css" rel="stylesheet">
+
+  <link type="text/css" href="../student/public/vendor/perfect-scrollbar.css" rel="stylesheet">
+  <link type="text/css" href="../student/public/css/material-icons.css" rel="stylesheet">
+  <link type="text/css" href="../student/public/css/fontawesome.css" rel="stylesheet">
+  <link type="text/css" href="../student/public/css/preloader.css" rel="stylesheet">
+  <link type="text/css" href="../student/public/css/app.css" rel="stylesheet">
   <?php include("./partials/headlibs.php") ?>
   <link rel="stylesheet" href="../student/assets/css/testnangluc.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-</head>
 
-<body>
-  <?php include("./partials/header.php") ?>
-  <div class="container">
-    <h4 class="text-center" style="padding: 10px; font-size: 35px; font-weight: bold;">Bài kiểm tra đánh giá năng lực - Đề thi dựa theo chứng chỉ Cambrige - Số câu hỏi: 20</h4>
+</head>
+<style>
+  .labl {
+    width: 90%;
+    background-color: forestgreen;
+  }
+
+  .labl>input {
+    /* HIDE RADIO */
+    visibility: hidden;
+    /* Makes input not-clickable */
+    position: absolute;
+    /* Remove input from document flow */
+  }
+
+  .labl>input+div {
+    /* DIV STYLES */
+    cursor: pointer;
+    border: 2px solid transparent;
+  }
+
+  .labl>input:checked+div {
+    /* (RADIO CHECKED) DIV STYLES */
+    background-color: #ffd6cc;
+    border: 1px solid #ff6600;
+  }
+</style>
+
+<body class="layout-app ">
+
+  <div class="preloader">
+    <div class="sk-chase">
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+      <div class="sk-chase-dot"></div>
+    </div>
+  </div>
+  <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
+    <div class="mdk-drawer-layout__content page-content">
+
+
+      <?php include("./partials/header1.php") ?>
+      <div class="container page__container">
+      <h4 class="text-center" style="padding: 10px; font-size: 35px; font-weight: bold;">Bài kiểm tra đánh giá năng lực - Đề thi dựa theo chứng chỉ Cambrige - Số câu hỏi: 100</h4>
     <div class="row">
       <div class="col-md-10">
 
@@ -37,9 +90,11 @@
               </div>
               <div class="col-md-12 text-center">
                 <h4 id="mark"></h4>
-                <button id="btnGoiY" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                  Xem khóa học phù hợp với bạn
-                </button>
+                <a href="chonlop.php">
+                  <button id="btnGoiY" type="button" class="btn btn-primary">
+                    Xem khóa học phù hợp với bạn
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -60,61 +115,46 @@
         </div>
       </div>
     </div>
-  </div>
-  <?php include("./partials/footer.php") ?>
-  <!-- Contact bar -->
-  <ul class="contact-bar">
-    <li class="facebook">
-      <a href="https://m.me" target="_blank" rel="nofollow"></a>
-    </li>
-    <li class="zalo">
-      <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
-    </li>
-  </ul>
+      </div>
+      <?php include("./partials/footer.php") ?>
 
-  <!-- Modal -->
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Khóa học gợi ý cho bạn</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <h6>Bạn được xếp vào lớp moviers</h6>
-          <p>Các lớp gợi ý dành cho bạn</p>
-          <div class="btn-group btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-secondary active">
-              <input type="radio" name="options" id="option1">
-              <p>Lớp moviers MV01</p>
-              <p>Lịch học: 2-4-6</p>
-            </label>
-            <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option2">
-              <p>Lớp moviers MV01</p>
-              <p>Lịch học: 2-4-6</p>
-            </label>
-            <label class="btn btn-secondary">
-              <input type="radio" name="options" id="option3">
-              <p>Lớp moviers MV01</p>
-              <p>Lịch học: 2-4-6</p>
-            </label>
-          </div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đăng ký sau</button>
-        <button type="button" class="btn btn-primary">Đăng ký ngay</button>
-      </div>
     </div>
-  </div>
-  </div>
-</body>
 
-<script type="text/javascript">
+    <?php include("./partials/sidebar.php") ?>
+    <!-- My script -->
+    <script>
+      $(document).ready(function(){
+        
+      });
+
+      $('#btn-DangKy').click(function(){
+        let da = $(v).find('input[type="radio"]:checked').attr('value');
+        console.log(da);
+      })
+    </script>
+
+    <!-- jQuery -->
+    <script src="../student/public/vendor/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="../student/public/vendor/popper.min.js"></script>
+    <script src="../student/public/vendor/bootstrap.min.js"></script>
+
+    <!-- Perfect Scrollbar -->
+    <script src="../student/public/vendor/perfect-scrollbar.min.js"></script>
+
+    <!-- DOM Factory -->
+    <script src="../student/public/vendor/dom-factory.js"></script>
+
+    <!-- MDK -->
+    <script src="../student/public/vendor/material-design-kit.js"></script>
+
+    <!-- App JS -->
+    <script src="../student/public/js/app.js"></script>
+
+    <!-- Preloader -->
+    <script src="../student/public/js/preloader.js"></script>
+    <script type="text/javascript">
   $(document).ready(function() {
     $('#btnFinish').hide();
     $('#btnGoiY').hide();
@@ -183,6 +223,16 @@
     mark = Math.floor(mark);
     console.log(mark);
     $("#mark").text("Bạn đạt được " + mark + "/100 điểm");
+    $.ajax({
+      type: "POST", //type of method
+      url: "ketqua.php", //your page
+      data: {
+        mark: mark
+      }, // passing the values
+      success: function(res) {
+        // alert("Cap nhat diem thanh cong");      
+      }
+    });
 
   }
 
@@ -268,5 +318,15 @@
     }
   }
 </script>
+<!-- Contact bar -->
+<ul class="contact-bar">
+    <li class="facebook">
+      <a href="https://m.me" target="_blank" rel="nofollow"></a>
+    </li>
+    <li class="zalo">
+      <a href="https://zalo.me" target="_blank" rel="nofollow"></a>
+    </li>
+  </ul>
+</body>
 
 </html>
