@@ -19,12 +19,41 @@ require_once ('dbhelp.php');
   <div class="container">
     <div class="row">
       <div class="col-8 col-s-8 menu">
-        <div id="topic_name_detail" class="text-uppercase font-weight-bold">Topic Name</div><br />
+        <div id="topic_name_detail" class="text-uppercase font-weight-bold">
+			<?php
+					$ID = $_GET['ID'];
+					$sql = "select * from post a join student b on a.StudentID = b.ID 
+							where StudentID = '.$ID.' limit 1";
+					$studentList = executeResult($sql);
+					foreach ($studentList as $std) {
+						echo '
+									<p>'.$std['Title'].'</p>
+							';
+					}
+			?>
+		  </div>
                    <?php
 					$ID = $_GET['ID'];
 					$sql = "select * from post a join student b on a.StudentID = b.ID 
-												 join comment c on a.ID = c.StudentID
-							where ID = '.$ID.'";
+							where StudentID = '.$ID.' limit 1";
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a class="list-group-item list-group-item-action active"><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
+					?>
+		  
+		            <?php
+					$ID = $_GET['ID'];
+					$sql = "select * from post a join comment b on a.StudentID = b.StudentID 
+												 join student c on c.ID = b.StudentID
+							where b.StudentID = '.$ID.' limit 1";
 					$studentList = executeResult($sql);
 
 					foreach ($studentList as $std) {
@@ -35,14 +64,26 @@ require_once ('dbhelp.php');
 									</a>
 							  </div>';
 					}
-				?>
+					?>
       </div>
       <div class="col-4 col-s-4 menu">
         <div id="relative_posts" class="text-uppercase font-weight-bold">Relative Posts</div><br />
-        <div class="list-group">
-          <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-         
-        </div>
+                    <?php
+					$ID = $_GET['ID'];
+					$sql = "select * from post a join student b on a.StudentID = b.ID 
+							where StudentID = '.$ID.' and Type = a.Type limit 1";
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a class="list-group-item list-group-item-action "><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
+					?>
       </div>
     </div>
   </div>
