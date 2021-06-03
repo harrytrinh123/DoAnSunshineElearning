@@ -7,7 +7,6 @@ require_once ('config.php');
 function execute($sql) {
 	//create connection toi database
 	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
-	mysqli_set_charset($conn, 'UTF8');
 
 	//query
 	mysqli_query($conn, $sql);

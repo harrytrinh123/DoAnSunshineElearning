@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<?php
+require_once ('dbhelp.php');
+?>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <?php
@@ -20,42 +23,111 @@
         <div class="row">
             <div class="col-8 col-s-8 menu">
                 <div id="topic_name" class="text-uppercase font-weight-bold">Nghe</div><br />
-                <div class="list-group">
-                    <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-                </div>
+                <?php
+					
+					$sql = 'select * from post a join student b on a.StudentID = b.ID where type = 1';
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a href="Postdetail.php?ID='.$std['ID'].'" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
+				?>
             </div>
             <div class="col-4 col-s-4 menu">
                 <div id="lasted_posts" class="text-uppercase font-weight-bold">Lasted Topic</div><br />
-                <div class="list-group">
-                    <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-                </div>
+                <?php
+					
+					$sql = 'select * from post a join student b on a.StudentID = b.ID order by Time ASC limit 1';
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a href="Postdetail.php?ID='.$std['ID'].'" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
+				?>
             </div>
             <div class="col-8 col-s-8 menu">
                 <div id="topic_name" class="text-uppercase font-weight-bold">Nói</div><br />
-                <div class="list-group">
-                    <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-                </div>
+                <?php
+					
+					$sql = 'select * from post a join student b on a.StudentID = b.ID where type = 2';
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a href="Postdetail.php?ID='.$std['ID'].'" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
+				?>
             </div>
 			<div class="col-8 col-s-8 menu">
                 <div id="topic_name" class="text-uppercase font-weight-bold">Đọc</div><br />
 				<?php
-					$p->loadpost();
+					
+					$sql = 'select * from post a join student b on a.StudentID = b.ID where type = 3';
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a href="Postdetail.php?ID='.$std['ID'].'" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
 				?>
             </div>
 			<div class="col-8 col-s-8 menu">
                 <div id="topic_name" class="text-uppercase font-weight-bold">Viết</div><br />
-                <div class="list-group">
-                    <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40"/>
-					<p>Name</p>
-					<p>Comment</p>
-					</a>
-                </div>
+                <?php
+					
+					$sql = 'select * from post a join student b on a.StudentID = b.ID where type = 4';
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a href="Postdetail.php?ID='.$std['ID'].'" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
+				?>
             </div>
 			<div class="col-8 col-s-8 menu">
                 <div id="topic_name" class="text-uppercase font-weight-bold">Khác</div><br />
-                <div class="list-group">
-                    <a href="Postdetail.php" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" /> jkabfaksf</a>
-                </div>
+                <?php
+					
+					$sql = 'select * from post a join student b on a.StudentID = b.ID where type = 5';
+					$studentList = executeResult($sql);
+
+					foreach ($studentList as $std) {
+						echo '<div class="list-group">
+									<a href="Postdetail.php?ID='.$std['ID'].'" class="list-group-item list-group-item-action"><img src="images/user_avatar2.png" width="40" height="40" />
+									<p>'.$std['StudentName'].'</p>
+									<p>'.$std['Content'].'</p>
+									<p style="float:right">'.$std['Time'].'</p>
+									</a>
+							  </div>';
+					}
+				?>
             </div>
 			</div>
 			</div>
