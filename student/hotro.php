@@ -19,7 +19,7 @@
   <link type="text/css" href="../student/public/css/fontawesome.css" rel="stylesheet">
   <link type="text/css" href="../student/public/css/preloader.css" rel="stylesheet">
   <link type="text/css" href="../student/public/css/app.css" rel="stylesheet">
-  <?php include("./partials/headlibs.php")?>
+  <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
 
 </head>
 

@@ -23,7 +23,9 @@ include("./partials/session.php");
 
   <!-- App CSS -->
   <link type="text/css" href="./public/css/app.css" rel="stylesheet">
-  <?php include("./partials/headlibs.php"); ?>
+  <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -161,7 +163,7 @@ include("./partials/session.php");
               email: email
             }, // passing the values
             success: function(res) {
-              alert("Cập nhật thành công");    
+              swal("Good job!", "Cập nhật thành công!", "success");  
             }
           });
         });

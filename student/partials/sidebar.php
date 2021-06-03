@@ -11,7 +11,7 @@
             </form>
           </div>
 
-          <a href="../student/index.php" class="sidebar-brand ">
+          <a href="../student/home.php" class="sidebar-brand ">
 
             <span class="avatar avatar-xl sidebar-brand-icon h-auto">
 
@@ -24,7 +24,7 @@
           <ul class="sidebar-menu">
 
             <li class="sidebar-menu-item ">
-              <a class="sidebar-menu-button" href="../index.php">
+              <a class="sidebar-menu-button" href="home.php">
                 <span class="sidebar-menu-text">Home</span>
               </a>
             </li>
@@ -44,22 +44,17 @@
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="student-my-courses.html">
+              <a class="sidebar-menu-button" href="diemdanh.php">
                 <span class="sidebar-menu-text">Điểm danh</span>
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="../student/student-dashboard.html">
-                <span class="sidebar-menu-text">Kết quả học tập</span>
-              </a>
-            </li>
-            <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="student-path.html">
+              <a class="sidebar-menu-button" href="baitap.php">
                 <span class="sidebar-menu-text">Bài tập</span>
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="student-course.html">
+              <a class="sidebar-menu-button" href="danhgia.php">
                 <span class="sidebar-menu-text">Đánh giá</span>
               </a>
             </li>
