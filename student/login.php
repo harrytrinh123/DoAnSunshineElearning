@@ -19,6 +19,7 @@
 <?php
 session_start();
 
+
 if(isset($_POST['login'])) {
   include("./partials/connect.php");
   $username = $_POST['username'];
@@ -30,6 +31,12 @@ if(isset($_POST['login'])) {
   
   $_SESSION['username'] = $final['Username'];
   $_SESSION['password'] = $final['Password'];
+  $uname = $_SESSION['username'];
+  // querry to get student id
+  $sql = "SELECT * FROM student WHERE student.Username = '$uname'";
+  $fn = ($connect->query($sql))->fetch_assoc();
+  $stID = $fn['ID'];
+  $_SESSION['studentID'] = $stID;
   if($username=$final['Username'] AND  $password=$final['Password']) {
     header('location: index.php');
   }
