@@ -19,7 +19,9 @@
   <link type="text/css" href="../student/public/css/fontawesome.css" rel="stylesheet">
   <link type="text/css" href="../student/public/css/preloader.css" rel="stylesheet">
   <link type="text/css" href="../student/public/css/app.css" rel="stylesheet">
-  <?php include("./partials/headlibs.php") ?>
+  <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
 
 </head>
 <style>
@@ -67,7 +69,7 @@
 
       <?php include("./partials/header1.php") ?>
       <div class="container page__container">
-        <form action="thanhtoan.php">
+        <form action="dangky.php">
           <div class="row">
             <div class="col-lg-12">
               <div class="page-section">
@@ -142,7 +144,7 @@
             </div>
           </div>
 
-          <button style="display: none; width: 200px;" id="btn-DangKy" class="btn btn-primary">ĐĂNG KÝ</button>
+          <button style="display: none; width: 200px;" id="btn-DangKy" class="btn btn-primary">TIẾP THEO</button>
         </form>
       </div>
       <?php include("./partials/footer.php") ?>

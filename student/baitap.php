@@ -21,7 +21,6 @@
   <link type="text/css" href="../student/public/css/app.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../student/assets/css/testnangluc.css">
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 <style>
@@ -69,7 +68,7 @@
 
       <?php include("./partials/header1.php") ?>
       <div class="container page__container">
-      <h4 class="text-center" style="padding: 10px; font-size: 35px; font-weight: bold;">Bài kiểm tra đánh giá năng lực - Đề thi dựa theo chứng chỉ Cambrige - Số câu hỏi: 100</h4>
+      <h4 class="text-center" style="padding: 10px; font-size: 35px; font-weight: bold;">Bài kiểm tra giữa kì</h4>
     <div class="row">
       <div class="col-md-10">
 
@@ -91,11 +90,6 @@
               </div>
               <div class="col-md-12 text-center">
                 <h4 id="mark"></h4>
-                <a href="chonlop.php">
-                  <button id="btnGoiY" type="button" class="btn btn-primary">
-                    Xem khóa học phù hợp với bạn
-                  </button>
-                </a>
               </div>
             </div>
           </div>
@@ -158,7 +152,6 @@
     <script type="text/javascript">
   $(document).ready(function() {
     $('#btnFinish').hide();
-    $('#btnGoiY').hide();
   });
 
 
@@ -167,7 +160,6 @@
     $('#btnFinish').show();
     $(this).hide();
     $('#mark').hide();
-    $('#btnGoiY').hide();
     //SET thoi gian lam bai
     sec = 900;
   });
@@ -177,7 +169,6 @@
     $('#btnStart').show();
     CheckResult();
     $('#mark').show();
-    $('#btnGoiY').show();
     clearInterval(inter);
   });
 
@@ -239,7 +230,7 @@
 
   function GetQuestion() {
     $.ajax({
-      url: 'questions.php',
+      url: 'baitaphandler.php',
       type: 'get',
       success: function(data) {
         questions = jQuery.parseJSON(data);
@@ -309,13 +300,12 @@
       sec = sec - 1;
 
     } else {
-      swal("Good job!", "You clicked the button!", "error");
+      alert("Het thoi gian lam bai");
       clearInterval(inter);
       $('#btnFinish').hide();
       $('#btnStart').show();
       CheckResult();
       $('#mark').show();
-      $('#btnGoiY').show();
     }
   }
 </script>

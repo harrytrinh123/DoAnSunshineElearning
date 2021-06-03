@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<?php 
-  include("./partials/session.php");
-?>
+<?php include('./partials/session.php'); ?>
 
 <head>
   <meta charset="utf-8">
@@ -10,15 +8,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="robots" content="noindex">
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap"
-    rel="stylesheet">
-  <link type="text/css" href="../student/public/vendor/spinkit.css" rel="stylesheet">
-  <link type="text/css" href="../student/public/vendor/perfect-scrollbar.css" rel="stylesheet">
-  <link type="text/css" href="../student/public/css/material-icons.css" rel="stylesheet">
-  <link type="text/css" href="../student/public/css/fontawesome.css" rel="stylesheet">
-  <link type="text/css" href="../student/public/css/preloader.css" rel="stylesheet">
-  <link type="text/css" href="../student/public/css/app.css" rel="stylesheet">
-  <?php include("./partials/headlibs.php")?>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap" rel="stylesheet">
+  <link type="text/css" href="../student1/public/css/style.css" rel="stylesheet">
+  <link type="text/css" href="../student1/public/css/payment.css" rel="stylesheet">
+  <link type="text/css" href="../student1/public/vendor/spinkit.css" rel="stylesheet">
+  <link type="text/css" href="../student1/public/vendor/perfect-scrollbar.css" rel="stylesheet">
+  <link type="text/css" href="../student1/public/css/material-icons.css" rel="stylesheet">
+  <link type="text/css" href="../student1/public/css/fontawesome.css" rel="stylesheet">
+  <link type="text/css" href="../student1/public/css/preloader.css" rel="stylesheet">
+  <link type="text/css" href="../student1/public/css/app.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 </head>
 
@@ -37,28 +37,27 @@
 
   <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
     <div class="mdk-drawer-layout__content page-content">
-      <?php include("./partials/header1.php")?>
+      <?php include('./partials/header1.php'); ?>
 
       <div class="py-32pt navbar-submenu">
         <div class="container page__container">
           <div class="progression-bar progression-bar--active-accent">
-            <a href="pricing.html" class="progression-bar__item progression-bar__item--complete">
+            <a href="#" class="progression-bar__item progression-bar__item--complete">
               <span class="progression-bar__item-content">
                 <i class="material-icons progression-bar__item-icon">✓</i>
-                <span class="progression-bar__item-text h5 mb-0 text-uppercase">Làm bài test</span>
+                <span class="progression-bar__item-text h5 mb-0 text-uppercase">Test năng lực </span>
               </span>
             </a>
-            <a href="signup.html" class="progression-bar__item progression-bar__item--complete">
+            <a href="#" class="progression-bar__item progression-bar__item--complete">
               <span class="progression-bar__item-content">
                 <i class="material-icons progression-bar__item-icon">✓</i>
                 <span class="progression-bar__item-text h5 mb-0 text-uppercase">Chọn lớp</span>
               </span>
             </a>
-            <a href="signup-payment.html"
-              class="progression-bar__item progression-bar__item--complete progression-bar__item--active">
+            <a href="../student1/signup-payment.html" class="progression-bar__item progression-bar__item--complete progression-bar__item--active">
               <span class="progression-bar__item-content">
                 <i class="material-icons progression-bar__item-icon"></i>
-                <span class="progression-bar__item-text h5 mb-0 text-uppercase">Thanh toán</span>
+                <span class="progression-bar__item-text h5 mb-0 text-uppercase">Đăng ký</span>
               </span>
             </a>
           </div>
@@ -67,7 +66,7 @@
 
       <div class="page-section">
         <div class="container page__container">
-          <form action="https://luma.humatheme.com/Demos/App_Layout/index.html" class="col-md-8 p-0 mx-auto">
+          <!-- <form class="col-md-8 p-0 mx-auto"> -->
 
             <div class="list-group list-group-form mb-0">
 
@@ -119,57 +118,76 @@
                   </div>
                 </div>
               </div>
-              <div class="list-group-item">
-                <fieldset aria-labelledby="label-type" class="m-0 form-group">
+              <div class="list-group-item " style="height: 10rem;">
+                <fieldset aria-labelledby="label-type" class="m-0 form-group" >
                   <div class="form-row align-items-center">
-                    <label for="payment_cc" id="label-type" class="col-md-3 col-form-label form-label">Hình thức thanh
-                      toán</label>
+                    <label for="payment_cc" id="label-type" class="col-md-3 col-form-label form-label">Hình thức thanh toán</label>
                     <div role="group" aria-labelledby="label-type" class="col-md-9">
-                      <div role="group" class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <label class="btn btn-outline-secondary active">
-                          <input type="radio" id="payment_cc" name="payment_type" value="cc" checked=""
-                            aria-checked="true" /> Thẻ ngân hàng
-                        </label>
-                        <label class="btn btn-outline-secondary">
-                          <input type="radio" id="payment_pp" name="payment_type" value="pp" aria-checked="true" /> Ví
-                          điện tử
-                        </label>
-                      </div>
+                      <label class="dropdown">
+
+                        <div class="dd-button">
+                          Tại Trung Tâm
+                        </div>
+
+                        <input type="checkbox" class="dd-input" id="test">
+
+                        <ul class="dd-menu">
+
+                          <li class="divider"></li>
+                          <li>
+                            <a href="../student1/index.html">SunshineEnglish</a>
+                          </li>
+                        </ul>
+
+                      </label>
+                      <label class="dropdown">
+
+                        <div class="dd-button"> Momo
+                          <img src="public/images/logo/momo.jpg" width="20px">
+                        </div>
+
+                        <input type="checkbox" class="dd-input" id="test">
+
+                        <ul class="dd-menu">
+                          <li>
+                            <img src="public/images/logo/QR.jpg" width="70px">
+                          </li>
+                        </ul>
+
+                      </label>
+
                     </div>
                   </div>
                 </fieldset>
               </div>
-              <div class="list-group-item">
-                <div class="form-group row align-items-center mb-0">
-                  <label class="col-form-label form-label col-sm-3">Security code (CVV)</label>
-                  <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="CVV" style="width:80px">
-                  </div>
-                </div>
+              <div class="btn btn-lg  text-center mb-4pt">
+                <button id="btn-DangKy" type="submit" class="btn btn-primary">ĐĂNG KÝ NGAY</button>
+
               </div>
 
-              <div class="list-group-item text-center">
-                <button type="submit" class="btn btn-primary">Thanh toán ngay</button>
-                <button type="submit" class="btn btn-primary">Hủy</button>
-              </div>
             </div>
 
-          </form>
+          <!-- </form> -->
+
         </div>
       </div>
 
-      <!-- // END Page Content -->
+      <!-- 
+                     <div class="list-group-item text-center">
+                                <button type="submit"
+                                        class="btn btn-primary">Thanh toán ngay</button>
+                                        <button type="submit"
+                                        class="btn btn-primary">Hủy</button>
+                            </div>// END Page Content -->
 
       <!-- Footer -->
 
-      <?php include("./partials/footer.php")?>
+      <?php include('./partials/footer.php'); ?>
 
       <!-- // END Footer -->
 
     </div>
-    <!-- Sidebar -->
-    <?php include("./partials/sidebar.php")?>
-
+    <?php include('./partials/sidebar.php'); ?>
     <!-- // END Drawer -->
 
     <!-- // END Drawer -->
@@ -179,30 +197,44 @@
   <!-- // END Drawer Layout -->
 
   <!-- jQuery -->
-  <script src="../student/public/vendor/jquery.min.js"></script>
+  <script src="../student1/public/vendor/jquery.min.js"></script>
 
   <!-- Bootstrap -->
-  <script src="../student/public/vendor/popper.min.js"></script>
-  <script src="../student/public/vendor/bootstrap.min.js"></script>
+  <script src="../student1/public/vendor/popper.min.js"></script>
+  <script src="../student1/public/vendor/bootstrap.min.js"></script>
 
   <!-- Perfect Scrollbar -->
-  <script src="../student/public/vendor/perfect-scrollbar.min.js"></script>
+  <script src="../student1/public/vendor/perfect-scrollbar.min.js"></script>
 
   <!-- DOM Factory -->
-  <script src="../student/public/vendor/dom-factory.js"></script>
+  <script src="../student1/public/vendor/dom-factory.js"></script>
 
   <!-- MDK -->
-  <script src="../student/public/vendor/material-design-kit.js"></script>
+  <script src="../student1/public/vendor/material-design-kit.js"></script>
 
   <!-- App JS -->
-  <script src="../student/public/js/app.js"></script>
+  <script src="../student1/public/js/app.js"></script>
 
   <!-- Preloader -->
-  <script src="../student/public/js/preloader.js"></script>
+  <script src="../student1/public/js/preloader.js"></script>
+
+  <script>
+    $('#btn-DangKy').click(function() {
+      var params = new URLSearchParams(location.search);
+      var classID =  params.get('classID');
+      $.ajax({
+        type: "POST", //type of method
+        url: "dangkyhandler.php", //your page
+        data: {
+          classID: classID
+        }, // passing the values
+        success: function(res) {
+          swal("Đăng ký thành công!", "Khóa học sẽ được duyệt trong 8 tiếng làm việc( giờ hành chính)", "success");    
+        }
+      });
+    });
+  </script>
 
 </body>
-
-
-<!-- Mirrored from luma.humatheme.com/Demos/App_Layout/signup-payment.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 18 May 2021 09:35:30 GMT -->
 
 </html>

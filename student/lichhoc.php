@@ -20,7 +20,7 @@ include("./partials/session.php");
   <link type="text/css" href="../student/public/css/preloader.css" rel="stylesheet">
   <link type="text/css" href="../student/public/css/app.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/lichhoc.css">
-  <?php include("./partials/headlibs.php") ?>
+  <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
 
 
 </head>
