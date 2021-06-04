@@ -1,8 +1,30 @@
 {
   "ExpandedNodes": [
     "",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
     "\\student"
   ],
   "SelectedNode": "\\student\\Forum.php",
+=======
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+    "\\admin",
+    "\\student",
+    "\\student\\assets",
+    "\\student\\assets\\css",
+    "\\student\\assets\\source"
+  ],
+  "SelectedNode": "\\student\\assets\\source\\class.php",
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
   "PreviewInSolutionExplorer": false
 }

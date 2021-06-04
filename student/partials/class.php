@@ -29,7 +29,7 @@ class csdl
 {
 	function connect()
 	{
-		$con = mysql_connect("localhost","nvt2kk","123123");
+		$con = mysql_connect("localhost","nvt2k","123123");
 		if(!$con)
 		{
 			echo 'Khong ket noi duoc csdl !';
@@ -37,7 +37,7 @@ class csdl
 		}
 		else
 		{
-			mysql_select_db("banxe");
+			mysql_select_db("sushine_elearning");
 			mysql_query("SET NAMES UTF8");
 			return $con;
 		}
