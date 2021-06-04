@@ -38,7 +38,7 @@ if (!empty($_POST)) {
 		$sql = "insert into student(StudentName, DateOfBirth, Address, PhoneNumber) value ('$s_StudentName', '$s_DateOfBirth', '$s_Address', '$s_PhoneNumber')";
 	}
 
-	// echo $sql;
+	//echo $sql;
 
 	execute($sql);
 
