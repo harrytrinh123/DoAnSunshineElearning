@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <?php
 include("./partials/session.php");
+include("./partials/checkdangky.php");
 ?>
 
 <head>
