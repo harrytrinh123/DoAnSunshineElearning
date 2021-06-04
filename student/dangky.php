@@ -67,6 +67,18 @@
       <div class="page-section">
         <div class="container page__container">
           <!-- <form class="col-md-8 p-0 mx-auto"> -->
+          <?php
+          include("./partials/connect.php");
+          $uname = $_SESSION['username'];
+          $sql = "SELECT * FROM student JOIN account ON student.Username=account.Username WHERE student.Username='$uname'";
+          $result = $connect->query($sql);
+          $final = $result->fetch_assoc();
+
+          $classID = $_GET["classID"];
+          $sqlClass = "SELECT * FROM class WHERE class.ID = '$classID'";
+          $r = $connect->query($sqlClass);
+          $fn = $r->fetch_assoc();
+          ?>
 
             <div class="list-group list-group-form mb-0">
 
@@ -74,15 +86,15 @@
                 <div class="form-group row align-items-center mb-0">
                   <label class="col-form-label form-label col-sm-3">Họ và tên</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Nguyễn Thị Loan" />
+                    <input type="text" class="form-control" value="<?php echo $final['StudentName']?>" readonly />
                   </div>
                 </div>
               </div>
               <div class="list-group-item">
                 <div class="form-group row align-items-center mb-0">
-                  <label class="col-form-label form-label col-sm-3">SĐT</label>
+                  <label class="col-form-label form-label col-sm-3">Số điện thoại</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="0375 072 437" />
+                    <input type="text" class="form-control" value="<?php echo $final['PhoneNumber']?>" readonly />
                   </div>
                 </div>
               </div>
@@ -90,15 +102,15 @@
                 <div class="form-group row align-items-center mb-0">
                   <label class="col-form-label form-label col-sm-3">Email</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="nguyenthiloan2000gialai@gmail.com" />
+                    <input type="email" class="form-control" value="<?php echo $final['Email']?>" readonly />
                   </div>
                 </div>
               </div>
               <div class="list-group-item">
                 <div class="form-group row align-items-center mb-0">
-                  <label class="col-form-label form-label col-sm-3">Khóa học</label>
+                  <label class="col-form-label form-label col-sm-3">Tên lớp</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Stater/Movers/Flyers" />
+                    <input type="text" class="form-control" value="<?php echo $fn['ClassName'] ?>" readonly/>
                   </div>
                 </div>
               </div>
@@ -106,7 +118,7 @@
                 <div class="form-group row align-items-center mb-0">
                   <label class="col-form-label form-label col-sm-3">Thời gian học</label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="Thứ 2-Thứ 4-Thứ 6" />
+                    <input readonly type="text" class="form-control" value="<?php echo $fn['LichHoc'] ? "Thứ 2  - Thứ 4 - Thứ 6": "Thứ 3 - Thứ 5 - Thứ 7" ?>"  />
                   </div>
                 </div>
               </div>
@@ -114,7 +126,7 @@
                 <div class="form-group row align-items-center mb-0">
                   <label class="col-form-label form-label col-sm-3">Học phí </label>
                   <div class="col-sm-9">
-                    <input type="text" class="form-control" placeholder="20.000.000 VNĐ" />
+                    <input readonly type="text" class="form-control" value="<?php echo $fn['HocPhi']; ?> VND"  />
                   </div>
                 </div>
               </div>

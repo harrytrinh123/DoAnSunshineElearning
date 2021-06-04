@@ -31,7 +31,7 @@ include("./partials/session.php");
 
 <body class="layout-app ">
 
-  <!-- <div class="preloader">
+  <div class="preloader">
     <div class="sk-chase">
       <div class="sk-chase-dot"></div>
       <div class="sk-chase-dot"></div>
@@ -40,7 +40,7 @@ include("./partials/session.php");
       <div class="sk-chase-dot"></div>
       <div class="sk-chase-dot"></div>
     </div>
-  </div> -->
+  </div>
 
   <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px">
     <div class="mdk-drawer-layout__content page-content">

@@ -59,6 +59,11 @@
               </a>
             </li>
             <li class="sidebar-menu-item">
+              <a class="sidebar-menu-button" href="forum.php">
+                <span class="sidebar-menu-text">Forum</span>
+              </a>
+            </li>
+            <li class="sidebar-menu-item">
               <a class="sidebar-menu-button" href="hotro.php">
                 <span class="sidebar-menu-text">Hỗ trợ</span>
               </a>
