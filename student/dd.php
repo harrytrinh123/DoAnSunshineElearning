@@ -1,4 +1,5 @@
 <?php
+include("./partials/session.php");
 require_once ('db.php');
 
 $s_Date = $s_StudentID = $s_ClassID = '';
@@ -30,7 +31,7 @@ if (!empty($_POST)) {
 		$sql = "update rollcall Date  = '$s_Date', StudentID = '$s_StudentID', ClassID = '$s_ClassID', where ID = " .$s_ID;
 	} else {
 		//insert
-		$sql = "insert into rollcall(Date, StudentID, ClassID) value ('$s_Date', '$s_StudentID', '$s_ClassID')";
+		$sql = "insert into rollcall(IsChecked ,Date, StudentID, ClassID) value (true ,CURDATE(), '$s_StudentID', '$s_ClassID')";
 	}
 
 	// echo $sql;
@@ -83,16 +84,21 @@ if (isset($_GET['ID'])) {
 				<form method="post">
                 <div class="form-group">
 					  <label for="StudentName">StudentID:</label>
-					  <input type="number" name="ID" value="<?=$ID?>" style="display: none;">
-					  <input required="true" type="text" class="form-control" id="StudentID" name="StudentID" value="<?=$s_StudentID?>">
-					</div>
-					<div class="form-group">
-					  <label for="DateOfBirth">Date:</label>
-					  <input type="date ($format, $timestamp = 'time()')" class="form-control" id="DateOfBirth" name="DateOfBirth" value="<?=$s_Date?>">
+					  <?php
+					  $ID = $_SESSION['studentID'] ?>
+					  <input readonly required="true" type="text" class="form-control" id="StudentID" name="StudentID" value="<?php echo $ID?>">
 					</div>
 					<div class="form-group">
 					  <label for="Address">ClassID:</label>
-					  <input type="text" class="form-control" id="ClassID" name="ClassID" value="<?=$s_ClassID?>">
+					  <?php
+					  	include("./partials/connect.php");
+
+					  	$sql = "SELECT * FROM student WHERE ID='$ID'";
+						$result = $connect->query($sql);
+						$final = $result->fetch_assoc();	
+
+					 ?>
+					  <input type="text" class="form-control" id="ClassID" name="ClassID" value="<?php echo $final['ClassID']?>" readonly >
 					</div>
 					<button class="btn btn-success">Save</button>
 				</form>

@@ -44,7 +44,7 @@
               </a>
             </li>
             <li class="sidebar-menu-item">
-              <a class="sidebar-menu-button" href="diemdanh.php">
+              <a class="sidebar-menu-button" href="rollcall.php">
                 <span class="sidebar-menu-text">Điểm danh</span>
               </a>
             </li>

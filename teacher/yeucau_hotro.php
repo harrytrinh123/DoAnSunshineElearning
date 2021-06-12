@@ -152,7 +152,7 @@ require_once ('dbhelp.php');
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="xemlichday.php">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Lịch dạy</span>
                             </a>
@@ -170,7 +170,7 @@ require_once ('dbhelp.php');
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="GiaoBai.php">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Giao bài</span>
                             </a>
