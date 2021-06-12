@@ -126,19 +126,19 @@
                     <ul class="metismenu list-unstyled" id="side-menu">
                         <li class="menu-title">Menu</li>
                         <li>
-                            <a href="javascript: void(0);" class="waves-effect">
+                            <a href="index.php" class="waves-effect">
                                 <i class="bx bx-home-circle"></i><span class="badge badge-pill badge-info float-right"></span>
                                 <span>Trang chủ</span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="quanlylop.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Quản lý lớp</span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="quanlykh.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Quản lý khóa học</span>
                             </a>
@@ -151,37 +151,32 @@
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="quanlygv.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Quản lý giáo viên</span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="quanlylop.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Quản lý nhân viên</span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="dshschuathanhtoan.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>DS HS chưa thanh toán</span>
                             </a>
                         </li>
+                        
                         <li>
-                            <a href="javascript: void(0);">
-                                <i class="bx bx-briefcase-alt-2"></i>
-                                <span>Quản lý giáo viên</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="javascript: void(0);">
+                            <a href="thongkedoanhthu.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Thống kê doanh thu</span>
                             </a>
                         </li>
                         <li>
-                            <a href="javascript: void(0);">
+                            <a href="noiquy.php"  class=" waves-effect">
                                 <i class="bx bx-briefcase-alt-2"></i>
                                 <span>Nội quy</span>
                             </a>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+
+    <link rel="shortcut icon" href="assets\images\logo-lightt.png">
+
+    <!-- Bootstrap Css -->
+    <link href="assets\css\bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css">
+    <!-- Icons Css -->
+    <link href="assets\css\icons.min.css" rel="stylesheet" type="text/css">
+    <!-- App Css-->
+    <link href="assets\css\app.min.css" id="app-style" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+
+</head>
+
+<body data-sidebar="dark">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box">
+                        <a href="." class="logo logo-dark">
+                            <span class="logo-sm">
+                                <img src="assets\images\logo.svg" alt="" height="22">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets\images\logo-dark.png" alt="" height="17">
+                            </span>
+                        </a>
+
+                        <a href="." class="logo logo-light">
+                            <span class="logo-sm">
+                                <img src="assets\images\logo-lightt.svg" alt="" height="100">
+                            </span>
+                            <span class="logo-lg">
+                                <img src="assets\images\logo-lightt.png" alt="" height="97">
+                            </span>
+                        </a>
+                    </div>
+
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="bx bx-search-alt"></span>
+                        </div>
+                    </form>
+                </div>
+                <div class="d-flex">
+                    <div class="dropdown d-inline-block d-lg-none ml-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0" aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bx bx-bell bx-tada"></i>
+                        <span class="badge badge-danger badge-pill"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0" aria-labelledby="page-header-notifications-dropdown">
+                        <div class="p-3">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0"> Notifications </h6>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#!" class="small"> View All</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="assets\images\users\avatar-1.jpg" alt="Header Avatar">
+                            <span class="d-none d-xl-inline-block ml-1">Long</span>
+                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <!-- item-->
+                            <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle mr-1"></i> Profile</a>
+                            <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle mr-1"></i> My Wallet</a>
+                            <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="bx bx-wrench font-size-16 align-middle mr-1"></i> Settings</a>
+                            <a class="dropdown-item" href="#"><i class="bx bx-lock-open font-size-16 align-middle mr-1"></i> Lock screen</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="#"><i class="bx bx-power-off font-size-16 align-middle mr-1 text-danger"></i> Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <div class="vertical-menu">
+
+            <div data-simplebar="" class="h-100">
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Menu</li>
+                        <li>
+                            <a href="index.php"  class="waves-effect">
+                                <i class="bx bx-home-circle"></i><span class="badge badge-pill badge-info float-right"></span>
+                                <span>Trang chủ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dshocsinh.php"  class=" waves-effect">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                                <span>Danh sách học sinh</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="xemlichday.php">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                                <span>Lịch dạy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="yeucau_hotro.php"  class=" waves-effect">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                                <span>DS các yêu cầu hỗ trợ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="chitiethotro.php"  class=" waves-effect">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                                <span>Chi tiết các yêu cầu hỗ trợ</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <i class="bx bx-briefcase-alt-2"></i>
+                                <span>Giao bài</span>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--ds-->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    
+				<script>
+				$(document).ready(function() {
+				var calendar = $('#calendar').fullCalendar({
+    			editable:true,
+			  	header:{
+     			left:'prev,next today',
+     		 	center:'title',
+     			right:'month,agendaWeek,agendaDay'
+    			},
+  events: 'load.php',
+  selectable:true,
+  selectHelper:true,
+  select: function(start, end, allDay)
+    {
+     var title = prompt("Enter Event Title");
+     if(title)
+     {
+      var start = $.fullCalendar.formatDate(start, "Y-MM-DD HH:mm:ss");
+      var end = $.fullCalendar.formatDate(end, "Y-MM-DD HH:mm:ss");
+      $.ajax({
+       url:"insert.php",
+       type:"POST",
+       data:{title:title, start:start, end:end},
+       success:function()
+       {
+        calendar.fullCalendar('refetchEvents');
+        alert("Added Successfully");
+       }
+      })
+     }
+    },
+    editable:true,
+    eventResize:function(event)
+    {
+     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
+     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
+     var title = event.title;
+     var id = event.id;
+     $.ajax({
+      url:"update.php",
+      type:"POST",
+      data:{title:title, start:start, end:end, id:id},
+      success:function(){
+       calendar.fullCalendar('refetchEvents');
+       alert('Event Update');
+      }
+     })
+    },
+
+    eventDrop:function(event)
+    {
+     var start = $.fullCalendar.formatDate(event.start, "Y-MM-DD HH:mm:ss");
+     var end = $.fullCalendar.formatDate(event.end, "Y-MM-DD HH:mm:ss");
+     var title = event.title;
+     var id = event.id;
+     $.ajax({
+      url:"update.php",
+      type:"POST",
+      data:{title:title, start:start, end:end, id:id},
+      success:function()
+      {
+       calendar.fullCalendar('refetchEvents');
+       alert("Event Updated");
+      }
+     });
+    },
+
+    eventClick:function(event)
+    {
+     if(confirm("Are you sure you want to remove it?"))
+     {
+      var id = event.id;
+      $.ajax({
+       url:"delete.php",
+       type:"POST",
+       data:{id:id},
+       success:function()
+       {
+        calendar.fullCalendar('refetchEvents');
+        alert("Event Removed");
+       }
+      })
+     }
+    },
+
+   });
+  });
+   
+  </script>
+ </head>
+ <body>
+  <br />
+  <h2 align="center"><a href="#">Lịch dạy</a></h2>
+  <br />
+  <div class="container">
+	  <div id="calendar"></div>
