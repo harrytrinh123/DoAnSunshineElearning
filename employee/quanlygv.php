@@ -242,8 +242,8 @@ foreach ($teacherList as $std) {
             <td>'.($index++).'</td>
 			<td>'.$std['TeacherName'].'</td>
 			<td>'.$std['Address'].'</td>
-            <td>'.$std['Email'].'</td>
-            <td>'.$std['UserName'].'</td>
+            		<td>'.$std['Email'].'</td>
+            		<td>'.$std['UserName'].'</td>
 			<td><button class="btn btn-warning" onclick=\'window.open("gv.php?ID='.$std['ID'].'","_self")\'>Edit</button></td>
 			<td><button class="btn btn-danger" onclick="deleteTeacher('.$std['ID'].')">Delete</button></td>
 		</tr>';

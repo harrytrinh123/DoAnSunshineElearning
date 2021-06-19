@@ -1,5 +1,6 @@
 <?php
 require_once ('db.php');
+include("./partials/session.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -109,7 +110,7 @@ require_once ('db.php');
                     <div class="dropdown d-inline-block">
                         <div class="nav-item dropdown">
             <li class="nav-item">
-                <a class="btn btn-outline-dark">Long</a>
+                <a class="btn btn-outline-dark"><?php echo $_SESSION['username'] ?></a>
             </li>
         </div>
                     </div>

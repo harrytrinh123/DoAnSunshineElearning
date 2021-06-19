@@ -4,7 +4,7 @@ require_once ('dbhelp.php');
 $s_StudentName = $s_DateOfBirth = $s_Address = $s_PhoneNumber = '';
 
 if (!empty($_POST)) {
-
+$s_ID = '';
 	if (isset($_POST['StudentName'])) {
 		$s_StudentName = $_POST['StudentName'];
 	}
@@ -32,7 +32,7 @@ if (!empty($_POST)) {
 
 	if ($s_ID != '') {
 		//update
-		$sql = "update student StudentName = '$s_StudentName', DateOfBirth = '$s_DateOfBirth', Address = '$s_Address', PhoneNumber = '$s_PhoneNumber'  where ID = " .$s_ID;
+		$sql = "update student set StudentName = '$s_StudentName', DateOfBirth = '$s_DateOfBirth', Address = '$s_Address', PhoneNumber = '$s_PhoneNumber'  where ID = " .$s_ID;
 	} else {
 		//insert
 		$sql = "insert into student(StudentName, DateOfBirth, Address, PhoneNumber) value ('$s_StudentName', '$s_DateOfBirth', '$s_Address', '$s_PhoneNumber')";

@@ -19,7 +19,7 @@ if(isset($_POST['login'])) {
   $final = $results->fetch_assoc();
   $_SESSION['email'] = $final['Username'];
   $_SESSION['password'] = $final['Password'];
-  if($email==$final['Username'] AND  $password==$final['Password'] AND $final['Role']==3) {
+  if($email==$final['Username'] AND  $password==$final['Password'] AND $final['Role']==2) {
     header('location: index.php');
   }
   else {

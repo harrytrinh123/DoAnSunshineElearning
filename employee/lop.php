@@ -4,7 +4,7 @@ require_once ('dbhelp.php');
 $s_ClassName = $s_ClassSize = $s_DateStart = $s_DateEnd = $s_ScheduleID = $s_CourseID = $s_LichHoc = $s_HocPhi = '';
 
 if (!empty($_POST)) {
-
+	$s_id = '';
 	if (isset($_POST['ClassName'])) {
 		$s_ClassName = $_POST['ClassName'];
 	}
@@ -46,18 +46,18 @@ if (!empty($_POST)) {
 	$s_ClassSize      = str_replace('\'', '\\\'', $s_ClassSize);
 	$s_DateStart = str_replace('\'', '\\\'', $s_DateStart);
 	$s_DateEnd      = str_replace('\'', '\\\'', $s_DateEnd);
-    $s_ScheduleID = str_replace('\'', '\\\'', $s_ScheduleID);
+        $s_ScheduleID = str_replace('\'', '\\\'', $s_ScheduleID);
 	$s_CourseID      = str_replace('\'', '\\\'', $s_CourseID);
-    $s_LichHoc = str_replace('\'', '\\\'', $s_LichHoc);
+        $s_LichHoc = str_replace('\'', '\\\'', $s_LichHoc);
 	$s_HocPhi      = str_replace('\'', '\\\'', $s_HocPhi);
 	$s_ID       = str_replace('\'', '\\\'', $s_ID);
 
 	if ($s_ID != '') {
 		//update
-		$sql = "update student ClassName = '$s_ClassName', ClassSize = '$s_ClassSize', DateStart = '$s_DateStart', DateEnd = '$s_DateEnd', ScheduleID = '$s_ScheduleID', CourseID = '$s_CourseID', LichHoc = '$s_LichHoc', HocPhi = '$s_HocPhi' where ID = " .$s_ID;
+		$sql = "update class set ClassName = '$s_ClassName', ClassSize = '$s_ClassSize', DateStart = '$s_DateStart', DateEnd = '$s_DateEnd', ScheduleID = '$s_ScheduleID', CourseID = '$s_CourseID', LichHoc = '$s_LichHoc', HocPhi = '$s_HocPhi' where ID = " .$s_ID;
 	} else {
 		//insert
-		$sql = "insert into student(ClassName, ClassSize, DateStart, DateEnd, ScheduleID, CourseID, LichHoc, HocPhi) value ('$s_ClassName', '$s_ClassSize', '$s_DateStart', '$s_DateEnd', '$s_ScheduleID', '$s_CourseID', '$s_LichHoc', '$s_HocPhi')";
+		$sql = "insert into class(ClassName, ClassSize, DateStart, DateEnd, ScheduleID, CourseID, LichHoc, HocPhi) value ('$s_ClassName', '$s_ClassSize', '$s_DateStart', '$s_DateEnd', '$s_ScheduleID', '$s_CourseID', '$s_LichHoc', '$s_HocPhi')";
 	}
 
 	// echo $sql;
@@ -71,18 +71,18 @@ if (!empty($_POST)) {
 $ID = '';
 if (isset($_GET['ID'])) {
 	$ID          = $_GET['ID'];
-	$sql         = 'select * from cclass where ID = '.$ID;
+	$sql         = 'select * from class where ID = '.$ID;
 	$classList = executeResult($sql);
 	if ($classList != null && count($classList) > 0) {
-		$std        = $teacherList[0];
-		$s_CourseName = $std['ClassName'];
-		$s_Description  = $std['ClassSize'];
-        $s_CourseName = $std['DateStart'];
-		$s_Description  = $std['DateEnd'];
-        $s_CourseName = $std['ScheduleID'];
-		$s_Description  = $std['CourseID'];
-        $s_CourseName = $std['LichHoc'];
-		$s_Description  = $std['HocPhi'];
+		$std        = $classList[0];
+		$s_ClassName = $std['ClassName'];
+		$s_ClassSize  = $std['ClassSize'];
+       	        $s_DateStart = $std['DateStart'];
+		$s_DateEnd  = $std['DateEnd'];
+                $s_ScheduleID = $std['ScheduleID'];
+		$s_CourseID  = $std['CourseID'];
+                $s_LichHoc = $std['LichHoc'];
+		$s_HocPhi  = $std['HocPhi'];
         
 	} else {
 		$ID = '';
@@ -122,23 +122,23 @@ if (isset($_GET['ID'])) {
 					
 					<div class="form-group">
 					  <label for="ClassSize">ClassSize:</label>
-					  <input type="text" class="form-control" id="ClassSize" name="ClassSize" value="<?=$s_ClassSize?>">
+					  <input required="true" type="text" class="form-control" id="ClassSize" name="ClassSize" value="<?=$s_ClassSize?>">
 					</div>
                     <div class="form-group">
 					  <label for="DateStart">DateStart:</label>
-					  <input type="date ($format, $timestamp = 'time()')" class="form-control" id="DateStart" name="DateStart" value="<?=$s_DateStart?>">
+					  <input type="date" class="form-control" id="DateStart" name="DateStart" value="<?=$s_DateStart?>">
 					</div>
                     <div class="form-group">
 					  <label for="DateEnd">DateEnd:</label>
-					  <input type="date ($format, $timestamp = 'time()')" class="form-control" id="DateEnd" name="DateEnd" value="<?=$s_DateEnd?>">
+					  <input required="true" type="date" class="form-control" id="DateEnd" name="DateEnd" value="<?=$s_DateEnd?>">
 					</div>
 					<div class="form-group">
 					  <label for="LichHoc">LichHoc:</label>
-					  <input type="text" class="form-control" id="LichHoc" name="LichHoc" value="<?=$s_LichHoc?>">
+					  <input required="true" type="text" class="form-control" id="LichHoc" name="LichHoc" value="<?=$s_LichHoc?>">
 					</div>
                     <div class="form-group">
 					  <label for="HocPhi">HocPhi:</label>
-					  <input type="text" class="form-control" id="HocPhi" name="HocPhi" value="<?=$s_HocPhi?>">
+					  <input required="true" type="text" class="form-control" id="HocPhi" name="HocPhi" value="<?=$s_HocPhi?>">
 					</div>
 					<button class="btn btn-success">Save</button>
 				</form>

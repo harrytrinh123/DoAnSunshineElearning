@@ -11,9 +11,9 @@
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap" rel="stylesheet">
   <link type="text/css" href="./public/vendor/spinkit.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/css/home.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/home.css" rel="stylesheet">
   <link type="text/css" href="./public/vendor/perfect-scrollbar.css" rel="stylesheet">
-  <link type="text/css" href="public/css/style.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/style.css" rel="stylesheet">
   <link type="text/css" href="./public/css/material-icons.css" rel="stylesheet">
   <link type="text/css" href="./public/css/fontawesome.css" rel="stylesheet">
   <link type="text/css" href="./public/css/preloader.css" rel="stylesheet">
@@ -52,10 +52,6 @@
               <ol class="breadcrumb p-0 m-0">
                 <li><a href="index.php">Home</a></li>
 
-                <li>
-                  > > Kết quả học tập
-                </li>
-
               </ol>
 
             </div>
@@ -78,7 +74,7 @@
 
               <div class="card">
                 <div class="card-header d-flex align-items-center">
-                  <div class="h2 mb-0 mr-3">116</div>
+                  <div class="h2 mb-0 mr-3">80</div>
                   <div class="flex">
                     <p class="card-title"></p>
                     <p class="card-subtitle text-50">Điểm cao nhất</p>
@@ -167,10 +163,10 @@
 
               <div class="card">
                 <div class="card-header d-flex align-items-center border-0">
-                  <div class="h2 mb-0 mr-3">110</div>
+                  <div class="h2 mb-0 mr-3">70</div>
                   <div class="flex">
                     <p class="card-title">Điểm trung bình</p>
-                    <p class="card-subtitle text-50">4 ngày liên tiếp trong tuần này</p>
+                    <p class="card-subtitle text-50">10 bài kiểm tra liên tiếp gần nhất</p>
                   </div>
                 </div>
                 <div class="card-body pt-0">
@@ -186,7 +182,7 @@
                   <div class="carousel-item active">
 
                     <a class="card border-0 mb-0" href="#">
-                      <img src="../student1/public/images/achievements/flinto.png" alt="Flinto" class="card-img" style="max-height: 100%; width: initial;">
+                      <img src="../student/public/images/achievements/flinto.png" alt="Flinto" class="card-img" style="max-height: 100%; width: initial;">
                       <div class="fullbleed bg-primary" style="opacity: .5;"></div>
                       <span class="card-body d-flex flex-column align-items-center justify-content-center fullbleed">
                         <span class="row flex-nowrap">
@@ -196,13 +192,13 @@
                           </span>
                           <span class="col d-flex flex-column">
                             <span class="text-right flex mb-16pt">
-                              <img src="../student1/public/images/paths/mailchimp_200x168.png" width="64" alt="Flinto" class="rounded">
+                              <img src="../student/public/images/paths/mailchimp_200x168.png" width="64" alt="Flinto" class="rounded">
                             </span>
                           </span>
                         </span>
                         <span class="row flex-nowrap">
                           <span class="col-auto text-center d-flex flex-column justify-content-center align-items-center">
-                            <img src="../student1/public/images/illustration/achievement/128/white.png" width="64" alt="achievement">
+                            <img src="../student/public/images/illustration/achievement/128/white.png" width="64" alt="achievement">
                           </span>
                           <span class="col d-flex flex-column">
                             <span>
@@ -219,7 +215,7 @@
                   <div class="carousel-item">
 
                     <a class="card border-0 mb-0" href="#">
-                      <img src="../student1/public/images/achievements/angular.png" alt="Angular fundamentals" class="card-img" style="max-height: 100%; width: initial;">
+                      <img src="../student/public/images/achievements/angular.png" alt="Angular fundamentals" class="card-img" style="max-height: 100%; width: initial;">
                       <div class="fullbleed bg-primary" style="opacity: .5;"></div>
                       <span class="card-body d-flex flex-column align-items-center justify-content-center fullbleed">
                         <span class="row flex-nowrap">
@@ -229,13 +225,13 @@
                           </span>
                           <span class="col d-flex flex-column">
                             <span class="text-right flex mb-16pt">
-                              <img src="../student1/public/images/paths/angular_64x64.png" width="64" alt="Angular" class="rounded">
+                              <img src="../student/public/images/paths/angular_64x64.png" width="64" alt="Angular" class="rounded">
                             </span>
                           </span>
                         </span>
                         <span class="row flex-nowrap">
                           <span class="col-auto text-center d-flex flex-column justify-content-center align-items-center">
-                            <img src="../student1/public/images/illustration/achievement/128/white.png" width="64" alt="achievement">
+                            <img src="../student/public/images/illustration/achievement/128/white.png" width="64" alt="achievement">
                           </span>
                           <span class="col d-flex flex-column">
                             <span>
@@ -273,7 +269,7 @@
                       <div class="d-flex align-items-center">
                         <div class="rounded mr-12pt z-0 o-hidden">
                           <div class="overlay">
-                            <img src="../student1/public/images/marker/khoahoc1.jpg" width="40" height="40" alt="Angular" class="rounded">
+                            <img src="../student/public/images/marker/khoahoc1.jpg" width="40" height="40" alt="Angular" class="rounded">
                             <span class="overlay__content overlay__content-transparent">
                               <span class="overlay__action d-flex flex-column text-center lh-1">
                                 <small class="h6 small text-white mb-0" style="font-weight: 500;">100%</small>
@@ -298,7 +294,7 @@
               <div class="popoverContainer d-none">
                 <div class="media">
                   <div class="media-left mr-12pt">
-                    <img src="../student1/public/images/marker/khoahoc1.jpg" width="40" height="40" alt="loan" class="rounded">
+                    <img src="../student/public/images/marker/khoahoc1.jpg" width="40" height="40" alt="loan" class="rounded">
                   </div>
                   <div class="media-body">
                     <div class="card-title">Staters</div>
@@ -346,7 +342,7 @@
                       <div class="d-flex align-items-center">
                         <div class="rounded mr-12pt z-0 o-hidden">
                           <div class="overlay">
-                            <img src="../student1/public/images/marker/khoahoc2.jpg" width="40" height="40" alt="Angular" class="rounded">
+                            <img src="../student/public/images/marker/khoahoc2.jpg" width="40" height="40" alt="Angular" class="rounded">
                             <span class="overlay__content overlay__content-transparent">
                               <span class="overlay__action d-flex flex-column text-center lh-1">
                                 <small class="h6 small text-white mb-0" style="font-weight: 500;">20%</small>
@@ -371,7 +367,7 @@
               <div class="popoverContainer d-none">
                 <div class="media">
                   <div class="media-left mr-12pt">
-                    <img src="../student1/public/images/marker/khoahoc2.jpg" width="40" height="40" alt="" class="rounded">
+                    <img src="../student/public/images/marker/khoahoc2.jpg" width="40" height="40" alt="" class="rounded">
                   </div>
                   <div class="media-body">
                     <div class="card-title">Movers</div>
@@ -419,7 +415,7 @@
                       <div class="d-flex align-items-center">
                         <div class="rounded mr-12pt z-0 o-hidden">
                           <div class="overlay">
-                            <img src="../student1/public/images/marker/khoahoc3.jpg" width="40" height="40" alt="Angular" class="rounded">
+                            <img src="../student/public/images/marker/khoahoc3.jpg" width="40" height="40" alt="Angular" class="rounded">
                             <span class="overlay__content overlay__content-transparent">
                               <span class="overlay__action d-flex flex-column text-center lh-1">
                                 <small class="h6 small text-white mb-0" style="font-weight: 500;">0%</small>
@@ -444,7 +440,7 @@
               <div class="popoverContainer d-none">
                 <div class="media">
                   <div class="media-left mr-12pt">
-                    <img src="../student1/public/images/marker/khoahoc3.jpg" width="40" height="40" alt="Angular" class="rounded">
+                    <img src="../student/public/images/marker/khoahoc3.jpg" width="40" height="40" alt="Angular" class="rounded">
                   </div>
                   <div class="media-body">
                     <div class="card-title">Flyers</div>
@@ -506,7 +502,7 @@
                       <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay mdk-reveal js-mdk-reveal " data-partial-height="44" data-toggle="popover" data-trigger="click">
 
                         <a href="#" class="js-image" data-position="">
-                          <img src="../student1/public/images/paths/angular_patterns_430x168.png" alt="course">
+                          <img src="../student/public/images/paths/angular_patterns_430x168.png" alt="course">
                           <span class="overlay__content align-items-start justify-content-start">
                             <span class="overlay__action card-body d-flex align-items-center">
                               <i class="material-icons mr-4pt"></i>
@@ -538,7 +534,7 @@
                       <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay mdk-reveal js-mdk-reveal " data-partial-height="44" data-toggle="popover" data-trigger="click">
 
                         <a href="#" class="js-image" data-position="">
-                          <img src="../student1/public/images/paths/angular_testing_430x168.png" alt="course">
+                          <img src="../student/public/images/paths/angular_testing_430x168.png" alt="course">
                           <span class="overlay__content align-items-start justify-content-start">
                             <span class="overlay__action card-body d-flex align-items-center">
                               <span class="card-title text-white">Resume</span>
@@ -567,7 +563,7 @@
                       <div class="card card-sm card--elevated p-relative o-hidden overlay overlay--primary-dodger-blue js-overlay mdk-reveal js-mdk-reveal " data-partial-height="44" data-toggle="popover" data-trigger="click">
 
                         <a href="#" class="js-image" data-position="">
-                          <img src="../student1/public/images/paths/figma_430x168.png" alt="course">
+                          <img src="../student/public/images/paths/figma_430x168.png" alt="course">
                           <span class="overlay__content align-items-start justify-content-start">
                             <span class="overlay__action card-body d-flex align-items-center">
                               <span class="card-title text-white">Resume</span>
@@ -608,7 +604,7 @@
               <div class="card card-group-row__card card-sm">
                 <div class="card-body d-flex align-items-center">
                   <a href="#" class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                    <img src="../student1/public/images/paths/mailchimp_200x168.png" alt="Introduction to TypeScript" class="avatar-img rounded">
+                    <img src="../student/public/images/paths/mailchimp_200x168.png" alt="Introduction to TypeScript" class="avatar-img rounded">
                     <span class="overlay__content"></span>
                   </a>
                   <div class="flex mr-12pt">
@@ -645,7 +641,7 @@
               <div class="card card-group-row__card card-sm">
                 <div class="card-body d-flex align-items-center">
                   <a href="#" class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                    <img src="../student1/public/images/paths/swift_200x168.png" alt="Introduction to TypeScript" class="avatar-img rounded">
+                    <img src="../student/public/images/paths/swift_200x168.png" alt="Introduction to TypeScript" class="avatar-img rounded">
                     <span class="overlay__content"></span>
                   </a>
                   <div class="flex mr-12pt">
@@ -681,7 +677,7 @@
               <div class="card card-group-row__card card-sm">
                 <div class="card-body d-flex align-items-center">
                   <a href="#" class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                    <img src="../student1/public/images/paths/sketch_200x168.png" alt="Introduction to TypeScript" class="avatar-img rounded">
+                    <img src="../student/public/images/paths/sketch_200x168.png" alt="Introduction to TypeScript" class="avatar-img rounded">
                     <span class="overlay__content"></span>
                   </a>
                   <div class="flex mr-12pt">
@@ -717,7 +713,7 @@
               <div class="card card-group-row__card card-sm">
                 <div class="card-body d-flex align-items-center">
                   <a href="#" class="avatar overlay overlay--primary avatar-4by3 mr-12pt">
-                    <img src="../student1/public/images/paths/craft_200x168.png" alt="Angular Fundamentals" class="avatar-img rounded">
+                    <img src="../student/public/images/paths/craft_200x168.png" alt="Angular Fundamentals" class="avatar-img rounded">
                     <span class="overlay__content"></span>
                   </a>
                   <div class="flex mr-12pt">

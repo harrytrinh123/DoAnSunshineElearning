@@ -1,4 +1,4 @@
-<footer>
+<footer style="background-color: rgb(12, 100, 91);">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">

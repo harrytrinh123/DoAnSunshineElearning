@@ -222,8 +222,8 @@ require_once ('dbhelp.php');
 							<th >ClassSize</th>
                             <th>DateStart</th>
                             <th >DateEnd</th>
-                            <th >ScheduleID</th>
-                            <th >CourseID</th>
+                            <!-- <th >ScheduleID</th>
+                            <th >CourseID</th> -->
                             <th >LichHoc</th>
                             <th >HocPhi</th>
 							<th width="60px"></th>
@@ -248,8 +248,7 @@ foreach ($classList as $std) {
 			<td>'.$std['ClassSize'].'</td>
             <td>'.$std['DateStart'].'</td>
             <td>'.$std['DateEnd'].'</td>
-            <td>'.$std['ScheduleID'].'</td>
-            <td>'.$std['CourseID'].'</td>
+
             <td>'.$std['LichHoc'].'</td>
             <td>'.$std['HocPhi'].'</td>
 			<td><button class="btn btn-warning" onclick=\'window.open("lop.php?ID='.$std['ID'].'","_self")\'>Edit</button></td>

@@ -9,14 +9,14 @@
   <meta name="robots" content="noindex">
 
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CRoboto:400,500%7CExo+2:600&amp;display=swap" rel="stylesheet">
-  <link type="text/css" href="../student1/public/css/style.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/css/payment.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/vendor/spinkit.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/vendor/perfect-scrollbar.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/css/material-icons.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/css/fontawesome.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/css/preloader.css" rel="stylesheet">
-  <link type="text/css" href="../student1/public/css/app.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/style.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/payment.css" rel="stylesheet">
+  <link type="text/css" href="./public/vendor/spinkit.css" rel="stylesheet">
+  <link type="text/css" href="./public/vendor/perfect-scrollbar.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/material-icons.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/fontawesome.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/preloader.css" rel="stylesheet">
+  <link type="text/css" href="./public/css/app.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/4197e7d2f0.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -54,7 +54,7 @@
                 <span class="progression-bar__item-text h5 mb-0 text-uppercase">Chọn lớp</span>
               </span>
             </a>
-            <a href="../student1/signup-payment.html" class="progression-bar__item progression-bar__item--complete progression-bar__item--active">
+            <a href="./signup-payment.html" class="progression-bar__item progression-bar__item--complete progression-bar__item--active">
               <span class="progression-bar__item-content">
                 <i class="material-icons progression-bar__item-icon"></i>
                 <span class="progression-bar__item-text h5 mb-0 text-uppercase">Đăng ký</span>
@@ -147,7 +147,7 @@
 
                           <li class="divider"></li>
                           <li>
-                            <a href="../student1/index.html">SunshineEnglish</a>
+                            <a href="./index.html">SunshineEnglish</a>
                           </li>
                         </ul>
 
@@ -209,26 +209,26 @@
   <!-- // END Drawer Layout -->
 
   <!-- jQuery -->
-  <script src="../student1/public/vendor/jquery.min.js"></script>
+  <script src="./public/vendor/jquery.min.js"></script>
 
   <!-- Bootstrap -->
-  <script src="../student1/public/vendor/popper.min.js"></script>
-  <script src="../student1/public/vendor/bootstrap.min.js"></script>
+  <script src="./public/vendor/popper.min.js"></script>
+  <script src="./public/vendor/bootstrap.min.js"></script>
 
   <!-- Perfect Scrollbar -->
-  <script src="../student1/public/vendor/perfect-scrollbar.min.js"></script>
+  <script src="./public/vendor/perfect-scrollbar.min.js"></script>
 
   <!-- DOM Factory -->
-  <script src="../student1/public/vendor/dom-factory.js"></script>
+  <script src="./public/vendor/dom-factory.js"></script>
 
   <!-- MDK -->
-  <script src="../student1/public/vendor/material-design-kit.js"></script>
+  <script src="./public/vendor/material-design-kit.js"></script>
 
   <!-- App JS -->
-  <script src="../student1/public/js/app.js"></script>
+  <script src="./public/js/app.js"></script>
 
   <!-- Preloader -->
-  <script src="../student1/public/js/preloader.js"></script>
+  <script src="./public/js/preloader.js"></script>
 
   <script>
     $('#btn-DangKy').click(function() {

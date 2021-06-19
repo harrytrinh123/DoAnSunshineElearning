@@ -37,7 +37,7 @@ if(isset($_POST['login'])) {
   $fn = ($connect->query($sql))->fetch_assoc();
   $stID = $fn['ID'];
   $_SESSION['studentID'] = $stID;
-  if($username=$final['Username'] AND  $password=$final['Password']) {
+  if($username=$final['Username'] AND  $password=$final['Password'] AND $final['Role']==0) {
     header('location: index.php');
   }
   else {

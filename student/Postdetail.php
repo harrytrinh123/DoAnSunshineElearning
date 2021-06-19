@@ -14,6 +14,8 @@ require_once ('dbhelp.php');
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
+
+
 <body>
   <?php include("./partials/header.php") ?>
   <div class="container">

@@ -1,7 +1,7 @@
 <?php
 require_once ('dbhelp.php');
 
-$s_TeacherName = $s_Address =  $s_Email  = $s_Username = '';
+$s_TeacherName = $s_Address =  $s_Email  = $s_UserName = '';
 
 if (!empty($_POST)) {
 
@@ -24,18 +24,18 @@ if (!empty($_POST)) {
 		$s_ID = $_POST['ID'];
 	}
 
-    $s_TeacherName = str_replace('\'', '\\\'', $s_TeacherName);
+  	$s_TeacherName = str_replace('\'', '\\\'', $s_TeacherName);
 	$s_Address      = str_replace('\'', '\\\'', $s_Address);
 	$s_Email = str_replace('\'', '\\\'', $s_Email);
-    $s_UserName  = str_replace('\'', '\\\'', $s_UserName);
+    	$s_UserName  = str_replace('\'', '\\\'', $s_UserName);
 	$s_ID       = str_replace('\'', '\\\'', $s_ID);
 
 	if ($s_ID != '') {
 		//update
-		$sql = "update student TeacherName = '$s_TeacherName', Address = '$s_Address', Email = '$s_Email', UserName = '$s_UserName'  where ID = " .$s_ID;
+		$sql = "update teacher set TeacherName = '$s_TeacherName', Address = '$s_Address', Email = '$s_Email', UserName = '$s_UserName'  where ID = " .$s_ID;
 	} else {
 		//insert
-		$sql = "insert into student(TeacherName, Address, Email, UserName) value ('$s_TeacherName', '$s_Address',  '$s_Email',  '$s_UserName')";
+		$sql = "insert into teacher(TeacherName, Address, Email, UserName) value ('$s_TeacherName', '$s_Address',  '$s_Email',  '$s_UserName')";
 	}
 
 	// echo $sql;
@@ -55,8 +55,8 @@ if (isset($_GET['ID'])) {
 		$std        = $teacherList[0];
 		$s_TeacherName = $std['TeacherName'];
 		$s_Address  = $std['Address'];
-        $s_Email      = $std['Email'];
-        $s_UserName = $std['UserName'];
+     	        $s_Email      = $std['Email'];
+                $s_UserName = $std['UserName'];
 	} else {
 		$ID = '';
 	}

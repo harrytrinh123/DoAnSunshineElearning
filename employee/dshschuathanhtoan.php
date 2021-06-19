@@ -138,6 +138,7 @@ require_once ('dbhelp.php');
 
                     <ul class="metismenu list-unstyled" id="side-menu">
                         <li class="menu-title">Menu</li>
+                        <li class="menu-title">Menu</li>
                         <li>
                             <a href="index.php" class="waves-effect">
                                 <i class="bx bx-home-circle"></i><span class="badge badge-pill badge-info float-right"></span>
@@ -195,19 +196,82 @@ require_once ('dbhelp.php');
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-flex align-items-center justify-content-between">
-                                <h4 class="mb-0 font-size-18">DSHS CHƯA THANH TOÁN</h4>
+                                <h4 class="mb-0 font-size-18">DS HS chưa thanh toán</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="javascript: void(0);">MENU</a></li>
-                                        <li class="breadcrumb-item active">DSHS CHƯA THANH TOÁN</li>
+                                        <li class="breadcrumb-item active">DS HS chưa thanh toán</li>
                                     </ol>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- end page title -->
-                    
+                    <div class="container">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				
+			</div>
+            <pre></pre>
+			<div class="panel-body">
+				<table class="table table-bordered">
+					<thead style = "text-align: center;">
+						<tr >
+							<th >STT</th>
+							<th>BillDate</th>
+							<th >BillStatus</th>
+                            <th >Total</th>
+                            <th >StudentID</th>
+                            <th >EmployeeID</th>
+                            
+						</tr>
+					</thead>
+					<tbody>
+<?php
+if (isset($_GET['s']) && $_GET['s'] != '') {
+	$sql = 'select * from bill where fullname like "%'.$_GET['s'].'%" AND BillStatus = 0';
+} else {
+	$sql = 'select * from bill WHERE BillStatus = false';
+}
+
+$billList = executeResult($sql);
+
+$index = 1;
+foreach ($billList as $std) {
+	echo '<tr>
+            <td>'.($index++).'</td>
+			<td>'.$std['BillDate'].'</td>
+			<td>'.$std['BillStatus'].'</td>
+            <td>'.$std['Total'].'</td>
+			<td>'.$std['StudentID'].'</td>
+            <td>'.$std['EmployeeID'].'</td>
+		</tr>';
+}
+?>
+					</tbody>
+				</table>
+				
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		function deleteCourse(ID) {
+			option = confirm('Bạn có muốn khóa học này không')
+			if(!option) {
+				return;
+			}
+
+			console.log(ID)
+			$.post('delete_kh.php', {
+				'ID': ID
+			}, function(data) {
+				alert(data)
+				location.reload()
+			})
+		}
+	</script>
 
 
 

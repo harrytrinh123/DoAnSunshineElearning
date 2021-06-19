@@ -6,7 +6,7 @@ $s_CourseName = $s_Description = '';
 if (!empty($_POST)) {
 
 	if (isset($_POST['CourseName'])) {
-		$s_CourseName = $_POST['CourseNamee'];
+		$s_CourseName = $_POST['CourseName'];
 	}
 
 	if (isset($_POST['Description'])) {
@@ -25,10 +25,10 @@ if (!empty($_POST)) {
 
 	if ($s_ID != '') {
 		//update
-		$sql = "update student CourseName = '$s_CourseName', Description = '$s_Description'  where ID = " .$s_ID;
+		$sql = "update course set CourseName = '$s_CourseName', Description = '$s_Description'  where ID = " .$s_ID;
 	} else {
 		//insert
-		$sql = "insert into student(CourseName, Description) value ('$s_CourseName', '$s_Description')";
+		$sql = "insert into course(CourseName, Description) value ('$s_CourseName', '$s_Description')";
 	}
 
 	// echo $sql;
@@ -45,7 +45,7 @@ if (isset($_GET['ID'])) {
 	$sql         = 'select * from course where ID = '.$ID;
 	$courseList = executeResult($sql);
 	if ($courseList != null && count($courseList) > 0) {
-		$std        = $teacherList[0];
+		$std        = $courseList[0];
 		$s_CourseName = $std['CourseName'];
 		$s_Description  = $std['Description'];
         

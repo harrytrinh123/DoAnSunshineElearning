@@ -232,10 +232,10 @@ require_once ('dbhelp.php');
 						<tr >
 							<th >STT</th>
 							<th>EmployeeName</th>
-							<th >Email</th>
+							<th>Email</th>
                             <th>Address</th>
-                            <th >PhoneNumber</th>
-                            <th >Username</th>
+                            <th>PhoneNumber</th>
+							
 							<th width="60px"></th>
 							<th width="60px"></th>
 						</tr>
@@ -248,32 +248,32 @@ if (isset($_GET['s']) && $_GET['s'] != '') {
 	$sql = 'select * from employee';
 }
 
-$employeeList = executeResult($sql);
+$studentList = executeResult($sql);
 
 $index = 1;
-foreach ($employeeList as $std) {
+foreach ($studentList as $std) {
 	echo '<tr>
             <td>'.($index++).'</td>
 			<td>'.$std['EmployeeName'].'</td>
 			<td>'.$std['Email'].'</td>
             <td>'.$std['Address'].'</td>
             <td>'.$std['PhoneNumber'].'</td>
-            <td>'.$std['Username'].'</td>
-			<td><button class="btn btn-warning" onclick=\'window.open("put.php?ID='.$std['ID'].'","_self")\'>Edit</button></td>
-			<td><button class="btn btn-danger" onclick="deleteEmployee('.$std['ID'].')">Delete</button></td>
+			
+			<td><button class="btn btn-warning" onclick=\'window.open("nv.php?ID='.$std['ID'].'","_self")\'>Edit</button></td>
+			<td><button class="btn btn-danger" onclick="deleteStudent('.$std['ID'].')">Delete</button></td>
 		</tr>';
 }
 ?>
 					</tbody>
 				</table>
-				<button class="btn btn-success" onclick="window.open('put.php', '_self')">Add Employee</button>
+				<button class="btn btn-success" onclick="window.open('nv.php', '_self')">Add Employee</button>
 			</div>
 		</div>
 	</div>
 
 	<script type="text/javascript">
-		function deleteEmployee(ID) {
-			option = confirm('Bạn có muốn nhân viên này không')
+		function deleteStudent(ID) {
+			option = confirm('Bạn có muốn xoá nhân viên này không')
 			if(!option) {
 				return;
 			}
